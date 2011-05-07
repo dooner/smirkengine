@@ -1,0 +1,14 @@
+#Sun Jul 25 11:15:08 EEST 2010
+AbstractTextEditor.Color.Background.SystemDefault=false
+AbstractTextEditor.Color.Foreground.SystemDefault=false
+AbstractTextEditor.Color.Foreground=255,255,255
+AbstractTextEditor.Color.SelectionBackground=130,107,141
+currentLineColor=50,51,0
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
+AbstractTextEditor.Color.FindScope=79,75,77
+AbstractTextEditor.Color.Background=0,0,0
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+printMarginColor=97,99,101
+eclipse.preferences.version=1
+AbstractTextEditor.Color.SelectionForeground=98,76,108
+overviewRuler_migration=migrated_3.1

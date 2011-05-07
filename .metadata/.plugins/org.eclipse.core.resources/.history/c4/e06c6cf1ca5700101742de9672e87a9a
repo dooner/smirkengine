@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   initialize="init()"
+					   >
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import genericEditor.HistoryManager;
+			
+			import mx.core.UIComponent;
+			
+			import newPenGeometry.geometry.geometry.AddPointAction;
+			import newPenGeometry.geometry.geometry.PenGeometry;
+			import newPenGeometry.geometry.point.MovePointAction;
+			import newPenGeometry.geometry.point.PenPoint;
+			
+			
+			private function init():void{
+				//var engine:Engine=new Engine();
+				trace("merhaba2");
+				//var u:UIComponent =new UIComponent();
+				
+				//u.addChild(engine);
+				//addElement(u);
+				
+				
+				var g:PenGeometry=new PenGeometry();
+				
+				var p:PenPoint = new PenPoint();
+				p.x=1;
+				p.y=2;
+				
+				
+				var addPoint:AddPointAction=new AddPointAction(g,p);
+				addPoint.execute();
+				
+				trace("Length " + g.pointArray.length);
+				
+				HistoryManager.undoIt();
+				
+				trace("Length " + g.pointArray.length);
+				
+				HistoryManager.undoIt();
+				
+				trace("Length " + g.pointArray.length);
+				
+				var movePointAction:MovePointAction=new MovePointAction(p,15,20);
+				
+				movePointAction.execute();
+				
+				HistoryManager.undoIt();
+				
+				HistoryManager.doIt();
+				HistoryManager.doIt();
+				HistoryManager.doIt();
+				HistoryManager.doIt();
+				HistoryManager.doIt();
+				
+				
+				
+			}
+		]]>
+	</fx:Script>
+</s:WindowedApplication>

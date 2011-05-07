@@ -1,0 +1,145 @@
+package com.mindfunction.smirkengine
+{
+	import flash.events.EventDispatcher;
+	import flash.utils.Dictionary;
+
+	dynamic public class Entity extends EventDispatcher
+	{
+				
+		
+		private var behaviourArray:Array=new Array();
+		private var behaviourDictionary:Array=new Array();
+		
+		private var childArray:Array=new Array();
+		private var childDictionary:Array=new Array();
+		
+		public var parent:Entity;
+		
+		public var behaviours:Dictionary=new Dictionary();
+		
+		public static const ENTITY_ADDED:String="ENTITY_ADDED";
+		public static const ENTITY_REMOVED:String="ENTITY_REMOVED";
+		
+		public function Entity()
+		{
+		}
+		
+		//behaviour
+		
+		public function addBehaviour(behaviour:EntityBehaviour,behaviourName:String=null):void{
+			behaviourArray.push(behaviour);
+			behaviours[Object(behaviour).constructor]=behaviour;
+			if(behaviourName) behaviourDictionary[behaviourName]=behaviour;
+			behaviour.entity=this;
+			behaviour.attachedToEntity();
+			behaviour.activated=true;
+			dispatchBehaviourAdded(behaviour);
+		}
+		
+		public function removeBehaviour(behaviour:EntityBehaviour):void{
+			dispatchBehaviourRemoved(behaviour);
+			behaviours[Object(behaviour).constructor]=null;
+			behaviourArray.splice(behaviourArray.indexOf(behaviour),1);
+			behaviour.activated=false;
+			behaviour.detachedFromEntity();
+			behaviour.entity=null;
+			
+		}
+		
+		public function destroy():void{
+			if(parent)
+				parent.removeChild(this);	
+		}
+		
+		public function removeBehaviourWithName(behaviourName:String):void{
+			removeBehaviour(getBehaviour(behaviourName));
+		}
+		
+		public function getBehaviour(behaviourName:String):EntityBehaviour{
+			return behaviourDictionary[behaviourName];
+		}
+
+		
+		//child
+		
+		public function addChild(child:Entity,childName:String=null):void{
+			childArray.push(child);
+			if(childName) childDictionary[childName]=child;
+			child.parent=this;
+			dispatchEntityAdded(child);
+				
+		}
+		
+
+		
+		public function removeChild(child:Entity):void{
+			dispatchEntityRemoved(child);
+			childArray.splice(childArray.indexOf(child),1);
+			child.parent=null;
+		}
+		
+		public function removeChildWithName(childName:String):void{
+			removeChild(getChild(childName));
+		}
+		
+		public function getChild(childName:String):Entity{
+			return childDictionary[childName];
+		}
+		
+		public function update():void{
+		
+			for each(var behaviour:EntityBehaviour in behaviourArray){
+				
+				behaviour.update();
+			}
+			for each(var child:Entity in childArray){
+				child.update();
+			}
+		}
+		
+		protected function dispatchEntityAdded(e:Entity):void{
+			
+			dispatchEvent(new EntityAddedEvent(Entity.ENTITY_ADDED,e));
+			if(parent){
+				parent.dispatchEntityAdded(e);
+			}
+			for each(var child:Entity in e.childArray){
+				e.dispatchEntityAdded(child);
+			}
+			for each(var behaviour:EntityBehaviour in e.behaviourArray){
+				e.dispatchBehaviourAdded(behaviour);
+			}
+		}
+		
+		protected function dispatchBehaviourAdded(b:EntityBehaviour):void{
+			dispatchEvent(new BehaviourAddedEvent(EntityBehaviour.BEHAVIOUR_ADDED,b));
+			if(parent){
+				parent.dispatchBehaviourAdded(b);
+			}
+		}
+		
+		
+		protected function dispatchEntityRemoved(e:Entity):void{
+			
+			dispatchEvent(new EntityRemovedEvent(Entity.ENTITY_REMOVED,e));
+			if(parent){
+				parent.dispatchEntityRemoved(e);
+			}
+			for each(var child:Entity in e.childArray){
+				e.dispatchEntityRemoved(child);
+			}
+			for each(var behaviour:EntityBehaviour in e.behaviourArray){
+				e.dispatchBehaviourRemoved(behaviour);
+			}
+		}
+		
+		protected function dispatchBehaviourRemoved(b:EntityBehaviour):void{
+			dispatchEvent(new BehaviourRemovedEvent(EntityBehaviour.BEHAVIOUR_REMOVED,b));
+			if(parent){
+				parent.dispatchBehaviourRemoved(b);
+			}
+		}
+		
+		
+	}
+}

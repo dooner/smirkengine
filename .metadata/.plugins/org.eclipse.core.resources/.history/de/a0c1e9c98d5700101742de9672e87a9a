@@ -1,0 +1,9 @@
+package com.mindfunction.command
+{
+	public interface ICommand
+	{
+		function doYourJob():void;
+		function undoYourJob():void;
+		function get info():String;
+	}
+}

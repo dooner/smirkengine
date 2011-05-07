@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="249" key="DIALOG_WIDTH"/>
+		<item value="32" key="DIALOG_Y_ORIGIN"/>
+		<item value="935" key="DIALOG_X_ORIGIN"/>
+		<item value="403" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="pixalaration" key="selection"/>
+		<list key="findhistory">
+			<item value="pixalaration"/>
+			<item value="scale_pixalaration"/>
+			<item value="addChild"/>
+			<item value="channel1"/>
+			<item value="getChannelArray"/>
+			<item value="dispatchEntityAdded"/>
+			<item value="dispatchEntityRemoved"/>
+			<item value="dispatchBehaviourRemoved"/>
+		</list>
+		<list key="replacehistory">
+			<item value="scale_pixalaration"/>
+			<item value="child"/>
+			<item value="parent."/>
+			<item value="FlexGlobals.topLevelApplication"/>
+			<item value="FlexGlobals.topLevelApplication."/>
+			<item value="FlexGlobals.topLevelApplication.styleManager."/>
+			<item value="fx"/>
+			<item value="dockable"/>
+		</list>
+	</section>
+</section>

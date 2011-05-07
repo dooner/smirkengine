@@ -1,0 +1,16 @@
+package com.mindfunction.smirkengine
+{
+	import flash.events.Event;
+	
+	public class BehaviourAddedEvent extends Event
+	{
+		
+		public var behaviour:EntityBehaviour;
+		
+		public function BehaviourAddedEvent(type:String, b:EntityBehaviour, bubbles:Boolean=false, cancelable:Boolean=false)
+		{
+			super(type, bubbles, cancelable);
+			behaviour=b;
+		}
+	}
+}

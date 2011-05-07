@@ -1,0 +1,165 @@
+package basicEngine
+{
+	
+	import basicEngine.movingPlatform.MovingPlatform;
+	
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	import flash.display.Sprite;
+	import flash.geom.Matrix;
+	import flash.geom.Rectangle;
+	
+	public class Camera2DBehaviour extends EntityBehaviour
+	{
+		
+		private var scale:Number=1;
+		private var width:Number;
+		private var height:Number;
+		private var pixalaration:Number=1;
+		
+		public function Camera2DBehaviour(_renderer:GameRenderer,_width:Number,_height:Number,_scale:Number=1,_pixalaration:Number=1)
+		{
+			super();
+			renderer=_renderer;
+			width=_width;
+			height=_height;
+			scale=_scale;
+			pixalaration=_pixalaration;
+			scale_pixalaration=scale/pixalaration;
+			width_2pixalaration=width/(2*pixalaration);
+			height_2pixalaration=height/(2*pixalaration);
+			width_pixalaration=width/pixalaration;
+			height_pixalaration=height/pixalaration;
+			
+		}
+		
+		private var renderer:GameRenderer;
+		private var m:Matrix=new Matrix();
+		private var bitmapData:BitmapData;
+		
+		public function lockBitmap():void{
+			if(bitmapData){
+				bitmapData.lock();
+			}
+		}
+		
+		public function unlockBitmap():void{
+			if(bitmapData){
+				bitmapData.unlock();
+			}
+		}
+		
+		protected virtual override function activationFunction():void{
+			
+			///////
+			
+			
+			bitmapData=new BitmapData(width/pixalaration,height/pixalaration);
+			var bitmap:Bitmap=new Bitmap(bitmapData);
+			bitmap.smoothing=false;
+			sprite.addChild(bitmap);
+			sprite.scaleX=sprite.scaleY=pixalaration;
+			/////
+		}
+		
+		private var _sprite:Sprite;
+		public function get sprite():Sprite{
+			if(!_sprite){
+				_sprite=new Sprite();
+			}
+			return _sprite;
+		}
+		
+		protected virtual override function deactivationFunction():void{
+			
+		}
+		
+		
+		private var parallaxBackGroundArray:Array=new Array();
+		
+		public function addParallaxBackground(p:ParallaxBackground):void{
+			parallaxBackGroundArray.push(p);				
+		}
+		
+		
+		private var scale_pixalaration:Number;
+		private var width_2pixalaration:Number;
+		private var height_2pixalaration:Number;
+		private var width_pixalaration:Number;
+		private var height_pixalaration:Number;
+		
+		public function calculateCoordinateX(n:Number):Number{
+			return n*scale_pixalaration+width_2pixalaration;
+		}
+		
+		public function calculateCoordinateY(n:Number):Number{
+			return n*scale_pixalaration+height_2pixalaration;
+		}
+		
+		public virtual override function update():void{
+			
+			
+			bitmapData.fillRect(new Rectangle(0,0,width_pixalaration,height_pixalaration),0xFFDDDDDD);
+			
+			for each(var p:ParallaxBackground in parallaxBackGroundArray){
+				m.identity();
+				m.scale(scale/pixalaration,scale/pixalaration);
+				
+				var ax:Number=((MovingPlatform(entity).platform.x)/p.distance)%p.sprite.width;
+				var ay:Number=((MovingPlatform(entity).platform.y)/p.distance)%p.sprite.height;
+				if(ax<0) ax=p.sprite.width-Math.abs(ax);
+				if(ay<0) ay=p.sprite.height-Math.abs(ay);
+				
+				ax=calculateCoordinateX(-ax);
+				ay=calculateCoordinateY(-ay);
+				
+				//trace(ax);
+				//trace(Math.abs(ay));
+				m.translate(ax,ay);
+				//m.translate(0*(scale/pixalaration)+(width/pixalaration)/2,0*(scale/pixalaration)+(height/pixalaration)/2);
+				bitmapData.draw(p.sprite,m);
+				
+				
+				var axToRight:Number=ax;
+				var axToLeft:Number=ax;
+				while(axToRight+p.sprite.width < width){
+					axToRight+=p.sprite.width;
+					m.identity();
+					m.scale(scale/pixalaration,scale/pixalaration);
+					m.translate(axToRight,ay);
+					bitmapData.draw(p.sprite,m);
+					
+				}
+				
+				while(axToLeft-p.sprite.width > 0){
+					axToLeft-=p.sprite.width;
+					m.identity();
+					m.scale(scale/pixalaration,scale/pixalaration);
+					m.translate(axToLeft,ay);
+					bitmapData.draw(p.sprite,m);
+					trace(axToLeft);
+				}
+				trace("____________");
+				
+				
+				/*
+				bitmapData.copyPixels(p.bitmapData,
+				new Rectangle(
+				MovingPlatform(entity).platform.x/p.distance,
+				MovingPlatform(entity).platform.y/p.distance,
+				width,height),new Point(0,0),null,null,true);
+				*/
+			}
+			
+			
+			m.identity();
+			m.scale(scale/pixalaration,scale/pixalaration);
+			//bitmapData.fillRect(new Rectangle(0,0,width/pixalaration,height/pixalaration),0xFFDDDDDD);
+			//m.translate(-MovingPlatform(entity).platform.x*(scale/pixalaration)+(width/pixalaration)/2,-MovingPlatform(entity).platform.y*(scale/pixalaration)+(height/pixalaration)/2);
+			m.translate(calculateCoordinateX(-MovingPlatform(entity).platform.x),calculateCoordinateY(-MovingPlatform(entity).platform.y));
+			bitmapData.draw(renderer.viewPort,m);
+		}
+		
+		
+	}
+}

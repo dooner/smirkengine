@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;P2CADProtoype/src/properties/Copy of ActionView.mxml&apos; to &apos;PropertiesView.mxml&apos;" description="Rename resource &apos;Copy of ActionView.mxml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/properties/Copy of ActionView.mxml" name="PropertiesView.mxml" stamp="1294069722096" updateReferences="true"/>
+</session>

@@ -1,0 +1,16 @@
+package
+{
+	import smirkengine.Entity;
+	
+	import smirkengine.movingPlatform.MovingPlatform;
+	
+
+	public class ShotemUpEntity extends MovingPlatform
+	{
+		
+		public function ShotemUpEntity()
+		{
+			super();
+		}
+	}
+}

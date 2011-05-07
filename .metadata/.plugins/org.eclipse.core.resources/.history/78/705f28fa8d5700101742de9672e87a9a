@@ -1,0 +1,48 @@
+package com.mindfunction.genericEditor
+{
+	import flash.utils.Dictionary;
+
+	public class ActionSubscriptionManager
+	{
+		private static var _actionSubscriptions:Dictionary;
+		
+		private static function get actionSubscriptions():Dictionary{
+			if(!_actionSubscriptions){
+				_actionSubscriptions=new Dictionary();
+			}
+			return _actionSubscriptions;
+		}
+		
+		public static function functionsOfAction(actionClass:Class):Array{
+			if(!actionSubscriptions[actionClass]){
+				actionSubscriptions[actionClass]=new Array();
+			}
+			return actionSubscriptions[actionClass] as Array;
+		}
+		
+		
+		public static function subscribeToAction(actionClass:Class,f:Function):void{
+			var a:Array=functionsOfAction(actionClass);
+			if(a.indexOf(f) == -1){
+				a.push(f);
+			}
+		}
+		
+		public static function unsubscribeToAction(actionClass:Class,f:Function):void{
+			var a:Array=functionsOfAction(actionClass);
+			if(a.indexOf(f) != -1){
+				a.splice(a.indexOf(f),1);
+			}
+		}
+		
+
+		
+		
+		public function ActionSubscriptionManager()
+		{
+			
+			
+			
+		}
+	}
+}

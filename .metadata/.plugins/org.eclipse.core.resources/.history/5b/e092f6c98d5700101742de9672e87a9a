@@ -1,0 +1,85 @@
+package com.mindfunction.my_mouse
+{       
+	import flash.display.*;
+	import flash.events.*; 
+	import flash.ui.Mouse;
+
+	public class MyMouse
+	{                     
+		public static const STANDART:String="standart";
+		public static const SCALE:String="scale";		
+		public static const ROTATION:String="rotate";
+		public static const MOVE:String="move";
+		public static const HAND:String="hand";		
+		
+		public static var selected_cursor:MovieClip;
+		public static var back_selected_cursor_name:String;
+        public static var cursor_array:Array;
+		public static var stage:Stage;
+        public static var locked:Boolean=false;    
+		public static function set_stage(s:Stage):void
+		{
+			stage=s;
+		}
+
+		public static function set_cursor(s:String,m:MovieClip):void
+		{
+			if(cursor_array==null) cursor_array=new Array();
+			cursor_array[s]=m;
+		}                     
+		
+		public static function use_cursor(s:String):void
+		{    
+			back_selected_cursor_name=s;
+			Mouse.hide(); 
+			if(!locked){
+			
+			
+			cursor_array[s].visible                         
+			selected_cursor=cursor_array[s];
+			selected_cursor.blendMode=BlendMode.INVERT;
+			selected_cursor.visible=true;
+			stage.addEventListener(MouseEvent.MOUSE_MOVE,mouse_move);
+            mouse_move(new MouseEvent("move"));
+			}
+		}
+        
+        public static function lock():void
+		{
+	      locked=true;  
+		}             
+		
+		public static function unlock():void
+		{
+			locked=false;  
+			
+			if(selected_cursor!=null){
+				selected_cursor.visible=false;
+			    Mouse.show();                
+			}
+			stage.removeEventListener(MouseEvent.MOUSE_MOVE,mouse_move);
+			
+			if(back_selected_cursor_name!='none') use_cursor(back_selected_cursor_name);
+		}
+		
+		public static function dont_use_cursor():void
+		{  
+			back_selected_cursor_name='none';
+			if(!locked){
+			Mouse.show();                
+			if(selected_cursor!=null)
+				selected_cursor.visible=false;
+			stage.removeEventListener(MouseEvent.MOUSE_MOVE,mouse_move);
+			}
+		}
+		
+		public static function mouse_move(e:MouseEvent):void
+		{
+		   selected_cursor.x=stage.mouseX;
+		   selected_cursor.y=stage.mouseY;
+		}
+		
+		
+	}
+	
+}

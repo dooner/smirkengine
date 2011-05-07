@@ -1,0 +1,179 @@
+package com.mindfunction.geditor.model
+{
+	import com.mindfunction.xml_serialization.IXMLLoadable;
+	
+	
+	public class Model implements IXMLLoadable
+	{
+	
+		
+		//static
+		
+		private static var _modelArray:Array;
+		private static function get modelArray():Array{
+			if(!_modelArray){
+				_modelArray=new Array();
+			}
+			return _modelArray;
+		}
+		
+		private static var _modelByIdArray:Array;
+		private static function get modelByIdArray():Array{
+			if(!_modelByIdArray){
+				_modelByIdArray=new Array();
+			}
+			return _modelByIdArray;
+		}
+		
+		private static function addModel(m:Model):void{
+			modelArray.push(m);
+			modelByIdArray[m.id]=m;
+		}
+		
+		public static function removeModel(m:Model):void{
+			modelArray.splice(modelArray.indexOf(m),1);
+			modelByIdArray[m.id]=null;
+			for each(var sm:Model in m.childs){
+				Model.removeModel(sm);	
+			}
+			
+		}
+		
+		private static function removeModelById(i:Number):void{
+			if(modelByIdArray[i]){
+				var m:Model=modelByIdArray[i];
+				removeModel(m);
+			}
+		}
+		
+		private static function find(i:Number):Model{
+			return modelByIdArray[i];
+		}
+		
+		
+		
+		
+		private static var biggestID:Number=0;
+		private static function checkID(i:Number):void{
+			if(i>biggestID){
+				biggestID=i;
+			}
+		}
+		
+		private static function getNextID():Number{
+			biggestID++;
+			return biggestID;
+		}
+		
+		
+		//
+		
+		private var _childs:Array=new Array();
+		private var _childsByName:Array=new Array();
+		private var _name:String;
+		private var _id:Number;
+		private var _data:XML;
+		
+		public function Model(xml:XML=null)
+		{
+			_data=<data>
+				  </data>
+			if(!xml){
+				_id=Model.getNextID();
+			}else{
+				loadXML(xml);
+				checkID(_id);
+			}
+			Model.addModel(this);
+			
+			
+			
+		}
+		
+		
+		public function get id():Number
+		{
+			return _id;
+		}
+		
+		
+		public function get childs():Array
+		{
+			return _childs;
+		}
+		
+		public function addChild(m:Model):void
+		{
+			childs.push(m);
+			_childsByName[m.name]=m;
+		}
+		
+		public function removeChild(m:Model):void
+		{
+			childs.splice(childs.indexOf(m),1);
+			
+			
+		}
+		
+		public function removeChildByName(s:String):void
+		{
+			removeChild(childByName(s));
+		}
+		
+		public function childByName(s:String):Model
+		{
+			return _childsByName[s];
+		}
+		
+		public function get name():String
+		{
+			return _name;
+		}
+		
+		public function set name(n:String):void
+		{
+			_name=n;
+		}
+		
+		private var _type:Model;
+		public function get type():Model
+		{
+			return _type;
+		}
+		
+		public function set type(t:Model):void
+		{
+			_type=t;	
+		}
+		
+		public function get data():XML{
+			return _data;
+		}
+		
+		
+		public function loadXML(xml:XML):void{
+			_data=xml.data;
+			name=xml.@name;
+			_id=xml.@id;
+			for each(var x:XML in xml.childs){
+				var m:Model = new Model(x);
+				addChild(m);
+			} 
+		}
+		
+		public function getXML():XML{
+			var xml:XML=<model>
+				</model>;
+			xml.@name=name;
+			xml.@id=id;
+			xml.appendChild(data);
+			var ch:XML=<childs>
+				</childs>
+			for each(var m:Model in childs){
+				ch.appendChild(m.getXML());
+			} 
+			xml.appendChild(ch);
+			return xml;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+package com.mindfunction.command
+{
+	public class DumpCommand implements ICommand
+	{
+		public function DumpCommand()
+		{
+		}
+		
+		public function doYourJob():void
+		{
+			
+		}
+		
+		public function undoYourJob():void
+		{
+		}
+		
+		public function get info():String
+		{
+			return "Dump Command";
+		}
+	}
+}

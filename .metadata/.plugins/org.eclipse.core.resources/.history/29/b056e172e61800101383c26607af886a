@@ -1,0 +1,27 @@
+package items.joining
+{
+	import com.mindfunction.genericEditor.Model;
+	
+	[Bindable]
+	public class Insan extends Model
+	{
+		
+		[Property]
+		public var isim:String;
+		
+		[Property]
+		public var yas:Number;
+		
+		[Property]
+		public var evli:Boolean;
+		
+		public function Insan()
+		{
+			
+			
+			
+			
+			super();
+		}
+	}
+}

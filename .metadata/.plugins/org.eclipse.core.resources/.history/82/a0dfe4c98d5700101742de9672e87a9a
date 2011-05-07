@@ -1,0 +1,95 @@
+package com.mindfunction.command
+{
+	public class CommandExecuter
+	{
+		
+		public function CommandExecuter()
+		{
+			addCommand(new DumpCommand());
+		}
+
+		// Statics
+		 
+		
+		private static var _activeInstance:CommandExecuter;
+		
+		public static function get activeInstance():CommandExecuter{
+			return _activeInstance;
+		}
+		
+		public static function set activeInstance(instance:CommandExecuter):void{
+			_activeInstance=instance;
+		}
+		
+		
+		private var currentCommandList:CommandLinkedList;
+		private var currentCommandID:Number=0;
+		private var commandGroupBegined:Boolean=false;
+		
+		public function executeCommand(command:ICommand):void{
+			addCommand(command);
+			currentCommandList.command.doYourJob();
+			trace("Command Executed "+command.info);
+		}
+		
+		public function addCommand(command:ICommand):void{
+			trace("Command Added "+ command.info);
+			if(currentCommandList){
+				currentCommandList.next=new CommandLinkedList(command,currentCommandID);
+				currentCommandList.next.previous=currentCommandList;
+				currentCommandList=currentCommandList.next;
+			}else{
+				currentCommandList=new CommandLinkedList(command,currentCommandID);
+			}
+			if(!commandGroupBegined) currentCommandID++;
+		}
+			
+		private function hasNextCommand():Boolean{
+			return currentCommandList && currentCommandList.next!=null;
+		}
+		
+		private function hasPreviousCommand():Boolean{
+			return currentCommandList && currentCommandList.previous!=null;
+		}
+		
+		public function redo():void{
+			trace("Redo");
+			if(hasNextCommand()){
+
+				
+				currentCommandList=currentCommandList.next;
+				currentCommandList.command.doYourJob();
+				trace("Redo job "+ currentCommandList.command.info);
+				if(hasNextCommand() && currentCommandList.commandID==currentCommandList.next.commandID){
+					redo();
+				}
+
+			}	
+		}
+		
+		public function undo():void{
+			trace("undo");
+			if(hasPreviousCommand()){
+				currentCommandList.command.undoYourJob();
+				trace("undo job "+ currentCommandList.command.info);
+				var id:Number=currentCommandList.commandID;
+				currentCommandList=currentCommandList.previous;
+				if(id==currentCommandList.commandID){
+					undo();
+				}
+			}	
+		}
+		
+		public function beginCommandGroup():void{
+			trace("BeginCOmmandGroup");
+			commandGroupBegined=true;
+		}
+		
+		public function endCommandGroup():void{
+			trace("EndCommandGroup");
+			commandGroupBegined=false;
+			currentCommandID++;
+		}
+		
+	}
+}

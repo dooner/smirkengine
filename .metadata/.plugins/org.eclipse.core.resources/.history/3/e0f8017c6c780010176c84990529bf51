@@ -1,0 +1,26 @@
+package 
+{
+	import smirkengine.Entity;
+	import smirkengine.EntityBehaviour;
+	
+	import smirkengine.movingPlatform.MovingPlatform;
+	
+	public class JumpingBehaviour extends EntityBehaviour
+	{
+		public function JumpingBehaviour()
+		{
+			super();
+		}
+		
+		private var a:Number=0.4;
+		
+		
+		public virtual override function update():void{
+			MovingPlatform(entity).platform.ySpeed+=a;
+			if(MovingPlatform(entity).platform.y>300){
+				MovingPlatform(entity).platform.y=300;
+				MovingPlatform(entity).platform.ySpeed*=-1;
+			}
+		}
+	}
+}

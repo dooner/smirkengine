@@ -1,0 +1,82 @@
+package com.mindfunction.genericEditor
+{
+	import flash.utils.Dictionary;
+	
+	public class ModelSubscriptionManager
+	{
+		
+		
+		private static var _modelSubscriptions:Dictionary;
+		private static var _modelAllSubscriptions:Dictionary;
+		
+		private static function get modelSubscriptions():Dictionary{
+			if(!_modelSubscriptions){
+				_modelSubscriptions=new Dictionary();
+			}
+			return _modelSubscriptions;
+		}
+		
+		private static function get modelAllSubscriptions():Dictionary{
+			if(!_modelAllSubscriptions){
+				_modelAllSubscriptions=new Dictionary();
+			}
+			return _modelAllSubscriptions;
+		}
+		
+		public static function functionsOfModel(model:Model):Array{
+			if(!modelAllSubscriptions[model]){
+				modelAllSubscriptions[model]=new Array();
+			}
+			return modelAllSubscriptions[model] as Array;
+		}
+		
+		public static function functionsOfModelAction(model:Model,actionClass:Class):Array{
+			if(!modelSubscriptions[actionClass]){
+				modelSubscriptions[actionClass]=new Dictionary();
+			}
+			if(!modelSubscriptions[actionClass][model]){
+				modelSubscriptions[actionClass][model]=new Array();
+			}
+			
+			return modelSubscriptions[actionClass][model] as Array;
+		}
+		
+		
+		public static function subscribeToModel(model:Model,f:Function):void{
+			var a:Array=functionsOfModel(model);
+			if(a.indexOf(f) == -1){
+				a.push(f);
+			}
+		}
+		
+		public static function unsubscribeToModel(model:Model,f:Function):void{
+			var a:Array=functionsOfModel(model);
+			if(a.indexOf(f) != -1){
+				a.splice(a.indexOf(f),1);
+			}
+		}
+		
+		public static function subscribeToActionOfModel(model:Model,actionClass:Class,f:Function):void{
+			var a:Array=functionsOfModelAction(model,actionClass);
+			if(a.indexOf(f) == -1){
+				a.push(f);
+			}
+			
+		}
+		
+		public static function unsubscribeToActionOfModel(model:Model,actionClass:Class,f:Function):void{
+			var a:Array=functionsOfModelAction(model,actionClass);
+			if(a.indexOf(f) != -1){
+				a.splice(a.indexOf(f),1);
+			}
+		}
+		
+		
+		public function ModelSubscriptionManager()
+		{
+			
+			
+			
+		}
+	}
+}

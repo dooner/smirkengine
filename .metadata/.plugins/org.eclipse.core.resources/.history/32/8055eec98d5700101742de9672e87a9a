@@ -1,0 +1,35 @@
+package com.mindfunction.my_debugger
+{                                                 
+	public class MyDebugger
+	{   
+	        
+		private static var trace_function:Function;
+	    private static var is_initialized:Boolean=false;
+           
+        
+	  
+ 		public static function set_standart():void{
+	    	MyDebugger.trace_function=function(s:String):void{
+		    	trace("MyTrace : " + s);
+			}
+		}	
+
+	        
+	   	public static function set_trace_function(tf:Function):void
+		{
+		   MyDebugger.trace_function=tf;
+		   MyDebugger.is_initialized=true;
+		}
+		
+	    public static function my_trace(s:String):void
+		{                                 
+		   if(!MyDebugger.is_initialized) MyDebugger.set_standart();
+		   MyDebugger.trace_function(s);
+		  
+		}
+		
+		 
+		
+	}
+	
+}

@@ -1,0 +1,38 @@
+package com.mindfunction.genericEditor
+{
+	
+	import actions.ModelSelected;
+	
+	import flash.utils.Dictionary;
+	
+	
+	public class Action extends Model
+	{
+		
+		
+		protected  function informObservers():void{
+			
+			var a:Array =  ActionSubscriptionManager.functionsOfAction(Object(this).constructor);
+			for each(var f:Function in a){
+				f(this);
+			}
+			
+		}
+		
+		
+		public function Action()
+		{
+			super();
+		}
+		
+		protected function executeFunction():void{
+			
+		}
+		
+		public function execute():void{
+			executeFunction();
+			informObservers();
+		}
+		
+	}
+}

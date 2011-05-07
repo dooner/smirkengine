@@ -1,0 +1,48 @@
+package com.mindfunction.genericEditor
+{
+	import com.mindfunction.genericEditor.general.RefreshModelAction;
+	
+	
+	[Bindable]
+	public class ModelView
+	{
+		public function ModelView()
+		{
+			super();
+		}
+		
+		public var xmlData:XML;
+		private var _model:Model;
+		public var delegate:IModelViewDelegate;
+		
+		public function set model(m:Model):void{
+			if(_model){
+				ModelSubscriptionManager.unsubscribeToActionOfModel(_model,RefreshModelAction,modelChangedEvent);
+			}
+			
+			_model=m;
+			xmlData=_model.xmlRepresentation;
+			ModelSubscriptionManager.subscribeToActionOfModel(_model,RefreshModelAction,modelChangedEvent);
+				
+			
+		}
+		
+		public function get model():Model{
+			return _model;
+		}
+		
+		private function modelChangedEvent(a:RefreshModelAction):void{
+			if(delegate){
+				delegate.modelRefreshed();
+			}
+			modelRefreshed();
+		}
+		
+		protected function modelRefreshed():void{
+			
+		}
+		
+		
+		
+	}
+}

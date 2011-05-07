@@ -1,0 +1,31 @@
+package com.mindfunction.model
+{
+	import flash.events.EventDispatcher;
+	import flash.utils.describeType; 
+
+	
+	[Bindable]
+	public class Model extends EventDispatcher
+	{
+		
+		public var name:String;
+		
+		public var childs:Array=new Array();
+		public var properties:Array=new Array();
+			
+		public function Model()
+		{
+		}
+		
+		
+		public function getDefinition():XML{
+			var xml:XML= describeType(this);
+			
+			//xml..accessor.(child("metadata").length!=0 && (trace(metadata.(@name=="ppp")).length!=0) );
+			var count:Number=0;
+			trace(xml..accessor.(trace("aboo " + (typeof(metadata.(@name=="ppp")  )))));
+			return xml;
+		}
+		
+	}
+}

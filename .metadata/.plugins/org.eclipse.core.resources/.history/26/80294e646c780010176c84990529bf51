@@ -1,0 +1,14 @@
+package
+{
+	import smirkengine.Entity;
+	import smirkengine.Game;
+
+	public class ShotemUpGame extends Game
+	{
+		public function ShotemUpGame()
+		{
+				
+		}
+		
+	}
+}

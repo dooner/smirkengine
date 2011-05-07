@@ -1,0 +1,161 @@
+package com.mindfunction.genericEditor
+{
+	import com.mindfunction.genericEditor.general.RefreshModelAction;
+	
+	import flash.events.Event;
+	import flash.events.EventDispatcher;
+	import flash.utils.Dictionary;
+	import flash.utils.describeType;
+	
+	import mx.collections.XMLListCollection;
+
+	
+	[Bindable]
+	public class Model extends EventDispatcher
+	{
+		
+		public var name:String;
+		
+		public var childs:Array=new Array();
+		public var properties:Array=new Array();
+		
+		public var parent:Model;		
+		
+		public var runTimeId:Number;
+		
+		private static var _modelArray:Array;
+		private static var _xmlDictionary:Dictionary;
+		
+		private static function get xmlDictionary():Dictionary{
+			if(!_xmlDictionary){
+				_xmlDictionary=new Dictionary();
+			}
+			
+			return _xmlDictionary;
+		}
+		
+		private static function get modelArray():Array{
+			if(!_modelArray){
+				_modelArray=new Array();
+			}
+			return _modelArray;
+		}
+		
+		private static function addModel(m:Model):void{
+			m.runTimeId=modelArray.length;
+			modelArray.push(m);
+			xmlDictionary[m.xmlRepresentation]=m;
+		}
+		
+		public static function find(id:Number):Model{
+			return modelArray[id];
+		}
+		
+		public static function findByXML(xml:XML):Model{
+			return modelArray[Number(xml.@model)];
+		}
+		
+		public function Model()
+		{
+			addModel(this);
+			initialXMLRepresentation.@model=runTimeId;
+			_xmlRepresentation=initialXMLRepresentation;
+			_xmlRepresentation.@label=_xmlRepresentation.@label+" :"+runTimeId;
+		}
+		
+		
+		public function get classType():Class{
+			return Object(this).constructor;	
+		}
+		
+		
+		private var _definition:XML;
+		
+		public function getDefinition():XML{
+			if(_definition) return _definition;
+			var xml:XML= describeType(this);
+			
+			var currentName:String= (Object(this).constructor).toString();
+			
+			var returnXML:XML=<Component label={currentName} type={currentName} model={this.runTimeId}></Component>;
+			
+			for each(var subXML:XML in	xml..accessor.(
+					XMLList(child("metadata").(@name=="Property")).length()!=0
+				)){
+			
+				var pXML:XML=<Property></Property>
+				pXML.@name=subXML.@name;
+				pXML.@type=subXML.@type;
+				pXML.@label=subXML.@name;
+				pXML.@model=this.runTimeId;
+				pXML.@state="open";
+				returnXML.appendChild(pXML);	
+					
+			}
+			
+			for each(subXML in	xml..accessor.(
+				XMLList(child("metadata").(@name=="Component")).length()!=0
+			)){
+				
+				var xx:XML= new XML(Model(this[subXML.@name]).getDefinition());
+				xx.@name=subXML.@name;
+				returnXML.appendChild(xx);	
+				
+			}
+			
+			
+			
+			
+			_definition=returnXML;
+			return returnXML;
+			
+		}
+		
+		
+		private var _xmlRepresentation:XML;
+		
+		public function get xmlRepresentation():XML{
+			return _xmlRepresentation;
+		}
+		
+		
+		public function subscribeAllActions(f:Function):void{
+			ModelSubscriptionManager.subscribeToModel(this,f);
+		}
+		
+		public function subscribeToAction(actionClass:Class,f:Function):void{
+			ModelSubscriptionManager.subscribeToActionOfModel(this,actionClass,f);
+		}
+		
+		public function unsubscribeAllActions(f:Function):void{
+			ModelSubscriptionManager.unsubscribeToModel(this,f);
+		}
+		
+		public function unsubscribeToAction(actionClass:Class,f:Function):void{
+			ModelSubscriptionManager.unsubscribeToActionOfModel(this,actionClass,f);
+		}
+		
+		
+		protected function get initialXMLRepresentation():XML{
+
+			return <Model label="default"/>;
+		}
+		
+		public function refresh():void{
+			refreshFunction();
+			//trace("IDDD "+this.runTimeId);
+			//xmlRepresentation.@label=xmlRepresentation.@label+ " " + this.runTimeId;
+			(new RefreshModelAction(this)).execute();
+		}
+		
+		protected function refreshFunction():void{
+			
+		}
+		
+		public function get actions():Array{
+			return null;
+		}
+		
+		
+	}
+}

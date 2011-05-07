@@ -1,0 +1,61 @@
+package smirkengine
+{
+	import flash.events.EventDispatcher;
+
+	public class EntityBehaviour extends EventDispatcher
+	{
+	
+		public var entity:Entity;
+		
+		private var _activated:Boolean=false;
+		
+		public static const BEHAVIOUR_ADDED:String="BEHAVIOUR_ADDED";
+		public static const BEHAVIOUR_REMOVED:String="BEHAVIOUR_REMOVED";
+		
+		public function EntityBehaviour()
+		{
+			
+		}
+		
+		public function get activated():Boolean{
+			return _activated;
+		}
+		
+		public function set activated(a:Boolean):void{
+		
+			if(!_activated && a){
+				activationFunction();
+			}else if(_activated && !a){
+				deactivationFunction();
+			}
+			_activated=a;
+		}	
+		
+		protected virtual function activationFunction():void{
+			
+		}
+		
+		protected virtual function deactivationFunction():void{
+			
+		}
+		
+		public virtual function attachedToEntity():void{
+			
+		}
+		
+		public virtual function detachedFromEntity():void{
+			
+		}
+			
+		public virtual function update():void{
+			if(activated){
+				updateFunction();
+			}
+		}
+		
+		protected virtual function updateFunction():void{
+			
+		}
+		
+	}
+}

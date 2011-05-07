@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:ns1="*"
+					   initialize="init();"
+					   >
+	<fx:Declarations>
+		
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.mindfunction.geditor.model.Model;
+			import com.mindfunction.my_debugger.MyDebugger;
+			public function init():void{
+				MyDebugger.my_trace("SELAM");
+				
+				
+				var koordinat:Model=new Model();
+				var xValue:Model=new Model();
+				xValue.name="x";
+				var yValue:Model=new Model();
+				yValue.name="y";
+				koordinat.addChild(xValue);
+				koordinat.addChild(yValue);
+				
+				
+				var point:Model = new Model();
+				var position:Model = new Model();
+				position.type=koordinat;
+				point.addChild(
+				
+				
+					
+				
+				
+				var stringModel:Model=new Model();
+				
+				var tekerlek:Model=new Model();
+				tekerlek.name
+				
+				var solOn
+				var araba:Model=new Model();
+				
+				
+				
+				
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<mx:Tree x="30" y="26"></mx:Tree>
+</s:WindowedApplication>

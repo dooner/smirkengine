@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.adobe.flexbuilder.editorcore.ui.pi.PropertiesView">
+		<item value="true" key="Size and Position"/>
+		<item value="Common" key="TreeGridImpl.TopCategory"/>
+		<item value="true" key="Layout"/>
+		<item value="194" key="TreeGridImpl.ColumnZeroWidth"/>
+		<item value="" key="TreeGridImpl.TopAttribute"/>
+		<item value="true" key="Style"/>
+		<item value="1" key="ViewOption"/>
+		<item value="true" key="Common"/>
+		<item value="78" key="TreeGridImpl.ColumnOneWidth"/>
+		<list key="CategoryExpanded">
+			<item value="true"/>
+			<item value="false"/>
+			<item value="true"/>
+			<item value="false"/>
+			<item value="true"/>
+			<item value="true"/>
+			<item value="true"/>
+			<item value="true"/>
+		</list>
+		<list key="CategoryNames">
+			<item value="Common"/>
+			<item value="Effects"/>
+			<item value="Events"/>
+			<item value="Size"/>
+			<item value="Styles"/>
+			<item value="Other"/>
+			<item value="Data"/>
+			<item value="Layout Constraints"/>
+		</list>
+	</section>
+	<section name="ExportWizard">
+		<section name="ExportSigningPage">
+			<item value="/Users/cihanozcelik/Projects/crr.p12" key="lastCertificate"/>
+			<list key="certificates">
+				<item value="/Users/cihanozcelik/Projects/crr.p12"/>
+			</list>
+		</section>
+	</section>
+</section>

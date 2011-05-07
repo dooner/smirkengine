@@ -1,0 +1,48 @@
+package com.mindfunction.genericEditor
+{
+	
+	import flash.events.Event;
+	
+	import mx.utils.ArrayUtil;
+
+	public class ModelAction extends Action
+	{
+		
+		public var model:Model;
+	
+		public static const MODEL_ACTION_EVENT:String="MODEL_ACTION_EVENT";
+		
+		
+		
+		protected override function informObservers():void{
+			
+			super.informObservers();
+			
+			var a:Array =  ModelSubscriptionManager.functionsOfModelAction(model,Object(this).constructor);
+			a=a.concat(ModelSubscriptionManager.functionsOfModel(model));
+			for each(var f:Function in a){
+				f(this);
+			}
+			
+		}
+		
+		public function ModelAction(m:Model)
+		{
+			super();
+			model=m;
+		}
+		
+		public override function execute():void{
+			super.execute();
+		}
+		
+		
+		
+		public static function get viewClass():Class{
+			return null;
+		}
+		
+		
+		
+	}
+}

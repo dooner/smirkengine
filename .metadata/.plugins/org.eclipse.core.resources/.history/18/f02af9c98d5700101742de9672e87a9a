@@ -1,0 +1,8 @@
+package com.mindfunction.xml_serialization
+{
+	public interface IXMLLoadable
+	{
+		function loadXML(xml:XML):void;
+		function getXML():XML;		
+	}
+}

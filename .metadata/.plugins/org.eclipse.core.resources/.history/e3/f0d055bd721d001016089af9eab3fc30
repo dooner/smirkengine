@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:ModelViewComponent xmlns:fx="http://ns.adobe.com/mxml/2009" 
+						  xmlns:s="library://ns.adobe.com/flex/spark" 
+						  xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:local="*" width="100%" height="100%">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.mindfunction.genericEditor.Model;
+			
+			import flash.utils.getQualifiedClassName;
+			
+			
+			public override function set model(m:Model):void{
+				
+				
+				
+				var xml:XML=m.getDefinition();
+			
+				modelView.xmlData=xml;
+				
+				//tree.openItems = modelView.treeData..*;
+				var d2:Date=new Date();
+				//trace("ZAMAN SON " + (d2.getTime()-d1.getTime()));
+				
+				for each (var xml:XML in modelView.xmlData.Property){
+					trace("XXXX " + xml.@label);
+					
+					var ClassReference:Class = PropertyView.propertyDictionary[xml.@type] ;
+					
+					if(ClassReference){
+						
+										
+						var addedElement:PropertyView = new ClassReference();
+						
+						addedElement.data=xml;
+						//trace("SCEEEENE "+scene);
+						scene.addElement(addedElement);
+						
+					}
+					
+				}
+				
+				
+			}	
+			
+		]]>
+	</fx:Script>
+	<s:VGroup x="0" y="0" width="100%" height="100%" id="scene">
+	</s:VGroup>
+	
+	
+</local:ModelViewComponent>

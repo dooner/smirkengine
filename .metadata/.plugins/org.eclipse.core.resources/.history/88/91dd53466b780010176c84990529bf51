@@ -1,0 +1,84 @@
+package smirkengine.collider
+{
+	
+	import smirkengine.EntityBehaviour;
+	import smirkengine.EntityObserver;
+	
+	import flash.display.MovieClip;
+
+	public class ColliderEngine extends EntityObserver
+	{
+		public function ColliderEngine()
+		{
+			super();
+			behaviourType=ColliderBehaviour;
+		}
+		
+		
+		private var colliderArray:Array=new Array();
+		
+		protected virtual override function activationFunction():void{
+		
+		}
+		
+		protected virtual override function deactivationFunction():void{
+		
+		}
+		
+		
+		private var colliderChannel:Array=new Array();
+		
+		private function getChannelArray(i:int):Array{
+			
+			if(!colliderChannel[i]){
+				//trace("CHANNEL ADDED " + i);
+				colliderChannel[i]=new Array();
+			}
+			return colliderChannel[i];
+		}
+		
+		protected virtual override function behaviourAddedFunction(b:EntityBehaviour):void{
+				colliderArray.push(b);
+				getChannelArray(ColliderBehaviour(b).channel).push(b);
+		}
+		
+		protected virtual override function behaviourRemovedFunction(b:EntityBehaviour):void{
+			
+			colliderArray.splice(colliderArray.indexOf(b),1);
+			
+			getChannelArray(ColliderBehaviour(b).channel).splice(getChannelArray(ColliderBehaviour(b).channel).indexOf(b),1);
+		}
+		
+		private var channelCouples:Array=new Array();
+		private var channelDictionary:Array=new Array();
+		public function addChannelCouple(c1:int,c2:int):void{
+			channelCouples.push(new ChanellCouple(c1,c2));
+		}
+		
+		protected virtual override function updateFunction():void{
+				
+			
+			for each(var c:ChanellCouple in channelCouples){
+				
+				var channel1:Array=getChannelArray(c.c1);
+				var channel2:Array=getChannelArray(c.c2);
+				
+				
+				for each(var l1:ColliderBehaviour in channel1){
+				
+					for each(var l2:ColliderBehaviour in channel2){
+											
+						if(l1.hitTest(l2)){
+							l1.dispatchEvent(new CollidedEvent(ColliderBehaviour.COLLIDED,l2));
+							l2.dispatchEvent(new CollidedEvent(ColliderBehaviour.COLLIDED,l1));
+						}
+						
+					}	
+				}
+		
+			}
+			
+		}
+		
+	}
+}

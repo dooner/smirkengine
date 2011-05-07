@@ -1,0 +1,23 @@
+package com.mindfunction.command
+{
+	private class CommandLinkedList
+	{
+		public function CommandLinkedList(c:ICommand,_commandID:Number)
+		{
+			_command=c;
+			commandID=_commandID;
+		}
+	
+		private var _command:ICommand;
+		
+		public function get command():ICommand{
+			return _command;
+		}
+		
+		public var previous:CommandLinkedList;
+		public var next:CommandLinkedList;
+		
+		public var commandID:Number;
+		
+	}
+}

@@ -1,0 +1,12 @@
+package com.mindfunction.p2cad.model.type
+{
+	import com.mindfunction.model.Model;
+	
+	public class ProjectType extends Model
+	{
+		public function ProjectType()
+		{
+			super();
+		}
+	}
+}

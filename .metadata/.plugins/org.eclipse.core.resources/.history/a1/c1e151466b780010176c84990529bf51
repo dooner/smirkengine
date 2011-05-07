@@ -1,0 +1,68 @@
+package smirkengine
+{
+	public class EntityObserver extends EntityBehaviour
+	{
+		public var entityType:Class;
+		public var behaviourType:Class;
+		
+		public function EntityObserver()
+		{
+			super();
+		}
+		
+		public virtual override function attachedToEntity():void{
+			
+			entity.addEventListener(EntityBehaviour.BEHAVIOUR_ADDED,behaviourAddedEvent);
+			entity.addEventListener(EntityBehaviour.BEHAVIOUR_REMOVED,behaviourRemovedEvent);
+			entity.addEventListener(Entity.ENTITY_ADDED,entityAddedEvent);
+			entity.addEventListener(Entity.ENTITY_REMOVED,entityRemovedEvent);
+		}
+		
+		
+		public virtual override function detachedFromEntity():void{
+			
+			entity.removeEventListener(EntityBehaviour.BEHAVIOUR_ADDED,behaviourAddedEvent);
+			entity.removeEventListener(EntityBehaviour.BEHAVIOUR_REMOVED,behaviourRemovedEvent);
+			entity.removeEventListener(Entity.ENTITY_ADDED,entityAddedEvent);
+			entity.removeEventListener(Entity.ENTITY_REMOVED,entityRemovedEvent);
+		}
+		
+		private function behaviourAddedEvent(e:BehaviourAddedEvent):void{
+			if(!behaviourType || Object(e.behaviour).constructor == behaviourType)
+				behaviourAddedFunction(e.behaviour);
+		}
+		
+		private function behaviourRemovedEvent(e:BehaviourRemovedEvent):void{
+			if(!behaviourType || Object(e.behaviour).constructor == behaviourType)
+				behaviourRemovedFunction(e.behaviour);
+		}
+		
+		private function entityAddedEvent(e:EntityAddedEvent):void{
+			if(!entityType || Object(e.entity).constructor == entityType)
+				entityAddedFunction(e.entity);
+		}
+		
+		private function entityRemovedEvent(e:EntityRemovedEvent):void{
+			if(!entityType || Object(e.entity).constructor == entityType)
+				entityRemovedFunction(e.entity);
+		}
+		
+		
+		protected virtual function behaviourAddedFunction(b:EntityBehaviour):void{
+			
+		}
+		
+		protected virtual function behaviourRemovedFunction(b:EntityBehaviour):void{
+			
+		}
+		
+		protected virtual function entityAddedFunction(e:Entity):void{
+			
+		}
+		
+		protected virtual function entityRemovedFunction(e:Entity):void{
+			
+		}
+		
+	}
+}

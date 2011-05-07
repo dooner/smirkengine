@@ -1,0 +1,49 @@
+package smirkengine.movingPlatform
+{
+	import smirkengine.BehaviourAddedEvent;
+	import smirkengine.BehaviourRemovedEvent;
+	import smirkengine.EntityBehaviour;
+	import smirkengine.EntityObserver;
+	
+	import flash.display.MovieClip;
+
+	public class MovingPlatformEngine extends EntityObserver
+	{
+		public function MovingPlatformEngine()
+		{
+			super();
+			behaviourType=MovingPlatformBehaviour;
+		}
+		
+		
+		private var platformArray:Array=new Array();
+		
+		protected virtual override function activationFunction():void{
+		
+		}
+		
+		protected virtual override function deactivationFunction():void{
+		
+		}
+		
+		
+		protected virtual override function behaviourAddedFunction(b:EntityBehaviour):void{
+				platformArray.push(b);
+		}
+		
+		protected virtual override function behaviourRemovedFunction(b:EntityBehaviour):void{
+			
+			platformArray.splice(platformArray.indexOf(b),1);
+			
+		}
+		
+		protected virtual override function updateFunction():void{
+					
+				for each(var platform:MovingPlatformBehaviour in platformArray){
+					platform.x+=platform.xSpeed;
+					platform.y+=platform.ySpeed;
+				}
+		}
+		
+	}
+}
