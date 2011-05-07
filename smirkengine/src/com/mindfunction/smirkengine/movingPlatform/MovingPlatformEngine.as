@@ -38,7 +38,7 @@ package com.mindfunction.smirkengine.movingPlatform
 		}
 		
 		protected virtual override function updateFunction():void{
-					
+	
 				for each(var platform:MovingPlatformBehaviour in platformArray){
 					platform.x+=platform.xSpeed;
 					platform.y+=platform.ySpeed;

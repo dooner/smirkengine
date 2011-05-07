@@ -4,20 +4,20 @@
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
 		<item value="-4" key="DIALOG_X_ORIGIN"/>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 	<section name="InstallationDialogSettings">
 		<item value="688" key="DIALOG_WIDTH"/>
 		<item value="-73" key="DIALOG_Y_ORIGIN"/>
-		<item value="657" key="DIALOG_HEIGHT"/>
 		<item value="-82" key="DIALOG_X_ORIGIN"/>
+		<item value="657" key="DIALOG_HEIGHT"/>
 		<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
-	</section>
-	<section name="NewWizardAction">
 	</section>
 	<section name="ShowViewDialog">
 		<item value="304" key="DIALOG_WIDTH"/>
 		<item value="111" key="DIALOG_Y_ORIGIN"/>
-		<item value="418" key="DIALOG_HEIGHT"/>
 		<item value="488" key="DIALOG_X_ORIGIN"/>
+		<item value="418" key="DIALOG_HEIGHT"/>
 		<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="ImportExportAction">

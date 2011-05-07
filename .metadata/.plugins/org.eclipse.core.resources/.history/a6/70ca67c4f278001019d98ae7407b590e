@@ -1,0 +1,9 @@
+package
+{
+	public class SoundEngine
+	{
+		public function SoundEngine()
+		{
+		}
+	}
+}

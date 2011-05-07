@@ -1,0 +1,33 @@
+package
+{
+	import flash.media.Sound;
+	import flash.media.SoundChannel;
+
+	public class SoundEngine
+	{
+		
+		private static var _singleton:SoundEngine;
+		
+		public static function get singleton():SoundEngine{
+			if(!_singleton){
+				_singleton=new SoundEngine();
+			}
+			return _singleton;
+		}
+		
+		
+		[Embed(source="fire1.mp3")]
+		[Bindable]
+		private var Fire1:Class;
+		
+		private var fire1:Sound = new Fire1() as Sound; 
+		
+		
+		
+		public function playFire1():void {
+			public var sndChannel:SoundChannel;
+			sndChannel=fire1.play();
+		}   
+		
+	}
+}

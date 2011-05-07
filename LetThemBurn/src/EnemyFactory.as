@@ -1,0 +1,11 @@
+package
+{
+	public class EnemyFactory extends ShotemUpEntity
+	{
+		public function EnemyFactory()
+		{
+			super();
+			addBehaviour(new EnemyFactoryBehaviour());
+		}
+	}
+}

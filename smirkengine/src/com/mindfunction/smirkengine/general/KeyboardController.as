@@ -19,13 +19,13 @@ package com.mindfunction.smirkengine.general
 		
 		
 		protected virtual override function activationFunction():void{
-			trace("KeyboardBehaviour Activated");
+			//trace("KeyboardBehaviour Activated");
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler);
 			stage.addEventListener(KeyboardEvent.KEY_UP, keyUpHandler);
 		}
 		
 		protected virtual override function deactivationFunction():void{
-			trace("KeyboardBehaviour deActivated");
+		//	trace("KeyboardBehaviour deActivated");
 			stage.removeEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler);
 			stage.removeEventListener(KeyboardEvent.KEY_UP, keyUpHandler);
 			

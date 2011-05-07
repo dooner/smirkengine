@@ -145,19 +145,38 @@ package com.mindfunction.smirkengine
 			m.scale(scale/pixalaration,scale/pixalaration);
 			m.translate(ax,ay);
 			bitmapData.draw(s,m);
-			trace("+++++++WRITETOBITMAPPPPPP+++++");
+			//trace("+++++++WRITETOBITMAPPPPPP+++++");
 		}
+		
+		public var parallaxXSpeed:Number=0;
+		public var parallaxYSpeed:Number=0;
+		public var parallaxX:Number=0;
+		public var parallaxY:Number=0;
+		
+		
+		
 		public virtual override function update():void{
-			trace("++++++++++++++++++++++++++");
-			trace("++++++++++++++++++++++++++");
+		//	trace("++++++++++++++++++++++++++");
+		//	trace("++++++++++++++++++++++++++");
+			
+			parallaxX+=parallaxXSpeed;
+			parallaxY+=parallaxYSpeed;
+			
 			
 			bitmapData.fillRect(new Rectangle(0,0,width_pixalaration,height_pixalaration),0xFF000000);
 			
 			for each(var p:ParallaxBackground in parallaxBackGroundArray){
 			
 				
+				/*
 				var ax:Number=((MovingPlatform(entity).platform.x)/p.distance)%p.sprite.width;
 				var ay:Number=((MovingPlatform(entity).platform.y)/p.distance)%p.sprite.height;
+				*/
+				
+				var ax:Number=(parallaxX/p.distance)%p.sprite.width;
+				var ay:Number=(parallaxY/p.distance)%p.sprite.height + p.sprite.height/2;
+				
+				
 				if(ax<0) ax=p.sprite.width-Math.abs(ax);
 				if(ay<0) ay=p.sprite.height-Math.abs(ay);
 				

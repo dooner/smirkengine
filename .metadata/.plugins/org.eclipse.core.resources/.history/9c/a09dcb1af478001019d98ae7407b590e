@@ -1,0 +1,47 @@
+package
+{
+	import flash.media.Sound;
+	import flash.media.SoundChannel;
+
+	public class SoundEngine
+	{
+		
+		private static var _singleton:SoundEngine;
+		
+		public static function get singleton():SoundEngine{
+			if(!_singleton){
+				_singleton=new SoundEngine();
+			}
+			return _singleton;
+		}
+		
+		
+		[Embed(source="fire1.mp3")]
+		private var Fire1:Class;
+		
+		private var fire1:Sound = new Fire1() as Sound; 
+		
+		[Embed(source="fire2.mp3")]
+		private var Fire2:Class;
+		
+		private var fire2:Sound = new Fire2() as Sound; 
+		
+		
+		
+		public function playFire1():void {
+			var sndChannel:SoundChannel;
+			switch(Math.floor(Math.random()*2)){
+				case 0:
+					sndChannel=fire1.play();
+					break;
+				case 1:
+					sndChannel=fire2.play();
+					break;
+			}
+				
+			
+			
+		}   
+		
+	}
+}

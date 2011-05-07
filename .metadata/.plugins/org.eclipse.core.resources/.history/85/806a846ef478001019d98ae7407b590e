@@ -1,0 +1,22 @@
+package
+{
+	import com.mindfunction.smirkengine.EntityBehaviour;
+	
+	public class BasicEnemyBehaviour extends EntityBehaviour
+	{
+		public function BasicEnemyBehaviour()
+		{
+			super();
+			
+		}
+		
+		
+		protected virtual override function updateFunction():void{
+			
+			ShotemUpEntity(entity).platform.xSpeed=-3;	
+			if(ShotemUpEntity(entity).platform.x<-180){
+				entity.parent.removeChild(entity);
+			}
+		}
+	}
+}

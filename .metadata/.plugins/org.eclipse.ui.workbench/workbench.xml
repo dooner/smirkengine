@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="34" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
 <window height="778" width="1280" x="5" y="22">
 <fastViewData fastViewLocation="1024">
@@ -98,21 +98,21 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/Enemy.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="367" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BulletTargetBehaviour.as" partName="BulletTargetBehaviour.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/BulletTargetBehaviour.as" title="BulletTargetBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/BulletTargetBehaviour.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/BulletTargetBehaviour.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1184" selectionTopPixel="557"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BulletTargetBehaviour.as" partName="BulletTargetBehaviour.as" path="/Users/cihanozcelik/Projects/smirkengine/ShootemUpGame/src/BulletTargetBehaviour.as" title="BulletTargetBehaviour.as" tooltip="ShootemUpGame/src/BulletTargetBehaviour.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShootemUpGame/src/BulletTargetBehaviour.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1252" selectionTopPixel="557"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Bullet.as" partName="Bullet.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/Bullet.as" title="Bullet.as" tooltip="GDL_Shoot_Em_Up/src/Bullet.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/Bullet.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="260" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Bullet.as" partName="Bullet.as" path="/Users/cihanozcelik/Projects/smirkengine/ShootemUpGame/src/Bullet.as" title="Bullet.as" tooltip="ShootemUpGame/src/Bullet.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShootemUpGame/src/Bullet.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="519" selectionTopPixel="0"/>
 </editor>
 <editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Hero.as" partName="Hero.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/Hero.as" title="Hero.as" tooltip="GDL_Shoot_Em_Up/src/Hero.as" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/Hero.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="HeroController.as" partName="HeroController.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/HeroController.as" title="HeroController.as" tooltip="GDL_Shoot_Em_Up/src/HeroController.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/HeroController.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1325"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="HeroController.as" partName="HeroController.as" path="/Users/cihanozcelik/Projects/smirkengine/ShootemUpGame/src/HeroController.as" title="HeroController.as" tooltip="ShootemUpGame/src/HeroController.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShootemUpGame/src/HeroController.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="191" selectionTopPixel="0"/>
 </editor>
 <editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="JumpingBehaviour.as" partName="JumpingBehaviour.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/JumpingBehaviour.as" title="JumpingBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/JumpingBehaviour.as" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/JumpingBehaviour.as"/>
@@ -213,15 +213,12 @@
 <view id="com.adobe.flexbuilder.packageexplorer" partName="Package Explorer">
 <viewState LINK_NAVIGATOR_TO_EDITOR="0" fpeIsFlat="0" fpeSortBy="1" sorter="1">
 <fpeExpanded>
-<fpeElement fpePath="/GDL_Shoot_Em_Up"/>
-<fpeElement fpePath="/GDL_Shoot_Em_Up/src"/>
-<fpeElement fpePath="/GDL_Shoot_Em_Up/src/smirkengine"/>
-<fpeElement fpePath="/gdlweb"/>
-<fpeElement fpePath="/gdlweb/src"/>
-<fpeElement fpePath="/gdlweb/src/%typeDefaultPackage"/>
+<fpeElement fpePath="/ShootemUpGame"/>
+<fpeElement fpePath="/ShootemUpGame/src"/>
+<fpeElement fpePath="/ShootemUpGame/src/%typeDefaultPackage"/>
 </fpeExpanded>
 <fpeSelection>
-<fpeElement fpePath="/GDL_Shoot_Em_Up"/>
+<fpeElement fpePath="/ShootemUpGame/src/JumpingBehaviour.as"/>
 </fpeSelection>
 <filters>
 <filter element=".*" isEnabled="false"/>
@@ -263,7 +260,8 @@
 <view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
+<expanded>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="1147"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -282,7 +280,7 @@
 </view>
 <view id="com.adobe.flash.profiler.ui.OfflineMonitor" partName="Saved Profiling Data"/>
 </views>
-<perspectives activePart="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" activePerspective="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development">
+<perspectives activePart="com.adobe.flexbuilder.packageexplorer" activePerspective="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.adobe.flexbuilder.mxml.editor.ui.perspectives.DevelopmentPerspectiveFactory" id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development" label="Flash"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -373,7 +371,7 @@
 </folder>
 </info>
 <info folder="true" part="bottomLayout" ratio="0.7173913" ratioLeft="495" ratioRight="195" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="Data/Services"/>
 <page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="Network Monitor"/>
@@ -582,22 +580,7 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/Particle.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/ShotEmUpEntity.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/ShotEmUpGame.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/ShotEmUpGameRenderer.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/collider/ChanellCouple.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/collider/CollidedEvent.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/collider/ColliderBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/collider/ColliderEngine.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/general/KeyboardController.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/general/LifeTimeBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/movingPlatform/MovingPlatform.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/movingPlatform/MovingPlatformBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/movingPlatform/MovingPlatformEngine.as"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/EntityBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/EntityObserver.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/EntityRemovedEvent.as"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/Game.as"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/GameRenderer.as"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/ParallaxBackground.as"/>
@@ -627,156 +610,169 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/BehaviourRemovedEvent.as"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/BehaviourAddedEvent.as"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/BulletTargetBehaviour.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/BitmapDeneme/src/BitmapDeneme.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/Bullet.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/HeroController.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SideScrollingShooter/src/Bullet.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SideScrollingShooter/src/HeroController.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SideScrollingShooter/src/BulletTargetBehaviour.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUp/src/Bullet.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUp/src/HeroController.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUp/src/BulletTargetBehaviour.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUpGame/src/Bullet.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUpGame/src/HeroController.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUpGame/src/BulletTargetBehaviour.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootetUpGameWebTest/[source path] src/GameController.as"/>
 </editors>
-<item historyLabel="Particle.as" index="0">
+<item historyLabel="Game.as" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ShotEmUpEntity.as" index="1">
+<item historyLabel="GameRenderer.as" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ShotEmUpGame.as" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ShotEmUpGameRenderer.as" index="3">
-<position info="not_deleted" x="1683" y="0"/>
-</item>
-<item historyLabel="ChanellCouple.as" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="CollidedEvent.as" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ColliderBehaviour.as" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ColliderEngine.as" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="KeyboardController.as" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LifeTimeBehaviour.as" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MovingPlatform.as" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MovingPlatformBehaviour.as" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MovingPlatformEngine.as" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="EntityBehaviour.as" index="13">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="EntityObserver.as" index="14">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="EntityRemovedEvent.as" index="15">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Game.as" index="16">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="GameRenderer.as" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ParallaxBackground.as" index="18">
+<item historyLabel="ParallaxBackground.as" index="3">
 <position info="not_deleted" x="393" y="0"/>
 </item>
-<item historyLabel="EntityBehaviour.as" index="13">
+<item historyLabel="EntityBehaviour.as" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="EntityAddedEvent.as" index="19">
+<item historyLabel="EntityAddedEvent.as" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Entity.as" index="20">
+<item historyLabel="Entity.as" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Camera2DBehaviour.as" index="21">
+<item historyLabel="Camera2DBehaviour.as" index="6">
 <position info="not_deleted" x="3775" y="0"/>
 </item>
-<item historyLabel="BehaviourRemovedEvent.as" index="22">
+<item historyLabel="BehaviourRemovedEvent.as" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BehaviourAddedEvent.as" index="23">
+<item historyLabel="BehaviourAddedEvent.as" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ChanellCouple.as" index="24">
+<item historyLabel="ChanellCouple.as" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="CollidedEvent.as" index="25">
+<item historyLabel="CollidedEvent.as" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ColliderBehaviour.as" index="26">
+<item historyLabel="ColliderBehaviour.as" index="11">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ColliderEngine.as" index="27">
+<item historyLabel="ColliderEngine.as" index="12">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="KeyboardController.as" index="28">
+<item historyLabel="KeyboardController.as" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="LifeTimeBehaviour.as" index="29">
+<item historyLabel="LifeTimeBehaviour.as" index="14">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MovingPlatform.as" index="30">
+<item historyLabel="MovingPlatform.as" index="15">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MovingPlatformBehaviour.as" index="31">
+<item historyLabel="MovingPlatformBehaviour.as" index="16">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MovingPlatformEngine.as" index="32">
+<item historyLabel="MovingPlatformEngine.as" index="17">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="EntityBehaviour.as" index="33">
+<item historyLabel="EntityBehaviour.as" index="18">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="EntityObserver.as" index="34">
+<item historyLabel="EntityObserver.as" index="19">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="EntityRemovedEvent.as" index="35">
+<item historyLabel="EntityRemovedEvent.as" index="20">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Game.as" index="36">
+<item historyLabel="Game.as" index="21">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GameRenderer.as" index="37">
+<item historyLabel="GameRenderer.as" index="22">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ParallaxBackground.as" index="38">
+<item historyLabel="ParallaxBackground.as" index="23">
 <position info="not_deleted" x="393" y="0"/>
 </item>
-<item historyLabel="EntityAddedEvent.as" index="39">
+<item historyLabel="EntityAddedEvent.as" index="24">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Entity.as" index="40">
+<item historyLabel="Entity.as" index="25">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Camera2DBehaviour.as" index="41">
+<item historyLabel="Camera2DBehaviour.as" index="26">
 <position info="not_deleted" x="3775" y="0"/>
 </item>
-<item historyLabel="BehaviourRemovedEvent.as" index="42">
+<item historyLabel="BehaviourRemovedEvent.as" index="27">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BehaviourAddedEvent.as" index="43">
+<item historyLabel="BehaviourAddedEvent.as" index="28">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="EntityObserver.as" index="34">
+<item historyLabel="EntityObserver.as" index="19">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GameRenderer.as" index="37">
+<item historyLabel="GameRenderer.as" index="22">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Game.as" index="36">
+<item historyLabel="Game.as" index="21">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MovingPlatformEngine.as" index="32">
+<item historyLabel="MovingPlatformEngine.as" index="17">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="BulletTargetBehaviour.as" index="44">
+<item historyLabel="BulletTargetBehaviour.as" index="29">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BitmapDeneme.as" index="30">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BulletTargetBehaviour.as" index="29">
+<position info="not_deleted" x="1184" y="0"/>
+</item>
+<item historyLabel="Bullet.as" index="31">
+<position info="not_deleted" x="260" y="0"/>
+</item>
+<item historyLabel="HeroController.as" index="32">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Bullet.as" index="33">
+<position info="not_deleted" x="260" y="0"/>
+</item>
+<item historyLabel="HeroController.as" index="34">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item historyLabel="BulletTargetBehaviour.as" index="35">
+<position info="not_deleted" x="1184" y="0"/>
+</item>
+<item historyLabel="Bullet.as" index="36">
+<position info="not_deleted" x="260" y="0"/>
+</item>
+<item historyLabel="HeroController.as" index="37">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item historyLabel="BulletTargetBehaviour.as" index="38">
+<position info="not_deleted" x="1184" y="0"/>
+</item>
+<item historyLabel="Bullet.as" index="39">
+<position info="not_deleted" x="260" y="0"/>
+</item>
+<item historyLabel="HeroController.as" index="40">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item historyLabel="BulletTargetBehaviour.as" index="41">
+<position info="not_deleted" x="1184" y="0"/>
+</item>
+<item historyLabel="GameController.as" index="42">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="HeroController.as" index="40">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item active="true" historyLabel="Bullet.as" index="39">
+<position info="not_deleted" x="294" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DESIGNER" type="4"/>
@@ -795,6 +791,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameController.as" tooltip="ShootetUpGameWebTest/[source path] src/GameController.as">
+<persistable path="/ShootetUpGameWebTest/[source path] src/GameController.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BitmapDeneme.as" tooltip="BitmapDeneme/src/BitmapDeneme.as">
+<persistable path="/BitmapDeneme/src/BitmapDeneme.as"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BehaviourAddedEvent.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/BehaviourAddedEvent.as">
 <persistable path="/GDL_Shoot_Em_Up/src/basicEngine/BehaviourAddedEvent.as"/>
 </file>
@@ -833,12 +835,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="KeyboardController.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/general/KeyboardController.as">
 <persistable path="/GDL_Shoot_Em_Up/src/basicEngine/general/KeyboardController.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ColliderEngine.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/collider/ColliderEngine.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/collider/ColliderEngine.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ColliderBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/collider/ColliderBehaviour.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/collider/ColliderBehaviour.as"/>
 </file>
 </mruList>
 </workbench>
