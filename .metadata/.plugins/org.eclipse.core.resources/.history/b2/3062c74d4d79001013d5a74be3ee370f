@@ -1,0 +1,201 @@
+package
+{
+	import com.mindfunction.smirkengine.Camera2DBehaviour;
+	import com.mindfunction.smirkengine.Entity;
+	import com.mindfunction.smirkengine.ParallaxBackground;
+	import com.mindfunction.smirkengine.collider.ColliderEngine;
+	import com.mindfunction.smirkengine.movingPlatform.MovingPlatform;
+	import com.mindfunction.smirkengine.movingPlatform.MovingPlatformBehaviour;
+	import com.mindfunction.smirkengine.movingPlatform.MovingPlatformEngine;
+	
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	import flash.display.IBitmapDrawable;
+	import flash.display.MovieClip;
+	import flash.display.Sprite;
+	import flash.events.Event;
+	import flash.filters.DropShadowFilter;
+	import flash.filters.GlowFilter;
+	import flash.filters.GradientGlowFilter;
+	import flash.geom.Matrix;
+	import flash.geom.Rectangle;
+	import flash.media.Camera;
+	
+	import spark.primitives.Rect;
+	
+	public class GameController extends MovieClip
+	{
+		public function GameController()
+		{
+			super();
+			
+			var disp:Sprite;
+			
+			addEventListener(Event.ADDED_TO_STAGE,function():void{
+				
+			
+				var game:ShotemUpGame=new ShotemUpGame();
+				var mainLevel:ShootemUpGame=new ShootemUpGame();
+				var movingPlatformEngine:MovingPlatformEngine=new MovingPlatformEngine();
+				var colliderEngine:ColliderEngine=new ColliderEngine();
+				colliderEngine.addChannelCouple(1,2);
+				
+				var renderer:ShotemUpGameRenderer=new ShotemUpGameRenderer();
+				
+				
+				
+				game.addBehaviour(movingPlatformEngine);
+				game.addBehaviour(colliderEngine);
+				game.addBehaviour(renderer);
+				
+				var hero:Hero=new Hero();
+				
+				for(var i:int=0;i<0;i++){
+					var enemy:Enemy=new Enemy();
+					enemy.platform.x=Math.random()*320-160;
+					enemy.platform.y=Math.random()*240-120;
+					game.addChild(enemy);
+				}
+			
+				var enemyFactory:EnemyFactory=new EnemyFactory();
+				game.addChild(enemyFactory);
+				enemyFactory.platform.x=190;
+				
+				var heroController:HeroController=new HeroController(stage);
+				
+				hero.addBehaviour(heroController);
+			
+				hero.platform.x=0;
+				hero.platform.y=0;
+				game.addChild(hero);
+				
+				var opening1:OpeningScreen1=new OpeningScreen1();
+				opening1.platform.x=-160;
+				opening1.platform.y=-120;
+				
+				game.addChild(opening1);
+				
+				
+				var opening2:OpeningScreen2=new OpeningScreen2();
+				opening2.platform.x=-160;
+				opening2.platform.y=-120;
+				
+				game.addChild(opening2);
+				
+				
+				var opening3:OpeningScreen3=new OpeningScreen3();
+				opening3.platform.x=-160;
+				opening3.platform.y=-120;
+				
+				game.addChild(opening3);
+				
+				var camera:Camera2DBehaviour=new Camera2DBehaviour(renderer,320,240,1,1);
+				//camera.sprite.scaleX=camera.sprite.scaleY=4;
+				hero.addBehaviour(camera);
+				camera.sprite.scaleX=camera.sprite.scaleY=2;
+				camera.sprite.x=0;
+				camera.sprite.y=0;
+				camera.parallaxXSpeed=10;
+				addChild(camera.sprite);
+				 var cameraHolder:ShotemUpEntity=new ShotemUpEntity();
+				 cameraHolder.addBehaviour(camera);
+				game.addChild(cameraHolder);
+				var camera2:Camera2DBehaviour=new Camera2DBehaviour(renderer,320,240,1,1);
+				//camera.sprite.scaleX=camera.sprite.scaleY=4;
+				//hero.addBehaviour(camera);
+				camera.sprite.scaleX=camera.sprite.scaleY=2;
+				camera.sprite.x=0;
+				camera.sprite.y=0;
+				addChild(camera.sprite);
+				
+				
+				camera.addParallaxBackground(createSpaceParallax(6));
+				camera.addParallaxBackground(createRandomParallax(4));
+				camera.addParallaxBackground(createRandomParallax(3));
+				camera.addParallaxBackground(createRandomParallax(2));
+				
+				camera.addParallaxBackground(createRandomParallax(1));
+				
+		
+				
+				
+				SoundEngine.singleton.playActionMusic();
+				
+				addEventListener(Event.ENTER_FRAME,function():void{
+					camera.lockBitmap();
+					//MovingPlatform(camera.entity).platform.x+=3;
+					game.update();		
+					camera.unlockBitmap();
+				});
+				
+				
+				
+				
+				
+				
+				
+			});		
+		}
+		[Embed(source="space.png")]
+		private var Space:Class;
+		
+		private function createSpaceParallax(n:Number):ParallaxBackground{
+			var pic:Bitmap = new Space();
+			var s2:Sprite= new Sprite();
+			s2.addChild(pic);
+			var p4:ParallaxBackground=new ParallaxBackground(s2,n);
+			return p4;
+		}
+		
+		private function createRandomParallax(n:Number):ParallaxBackground{
+			
+			var s1:Sprite=new Sprite();
+			for(var i:int = 0 ; i <1500 ;i++){
+				s1.graphics.beginFill(0xFFFFFF,1);
+				var ax:Number=Math.random()*1000;
+				var ay:Number=Math.random()*1000
+				var r:Number=Math.random();
+				s1.graphics.beginFill(0xFFFFFF,1);
+				s1.graphics.drawCircle(ax,ay,r);
+				/*
+				for(var k:int=2;k<10;k++){
+					s1.graphics.beginFill(0xFFFFFF,0.2/(k*3));
+					s1.graphics.drawCircle(ax,ay,r*(k*10));	
+				}*/
+				
+			}
+			
+			
+			
+			var gl:GlowFilter=new GlowFilter(0xffFFAAAA,0.8,44,44,13);
+			var gl2:DropShadowFilter=new DropShadowFilter(0,0,0xffFFFF,0.5,3,3,4,1);
+			var a:Array=new Array();
+			//a.push(gl);
+			a.push(gl2);
+			s1.filters=a;
+			
+			var s2:Sprite= new Sprite();
+			s2.addChild(s1);
+			var bm2:BitmapData=new BitmapData(s2.width,s2.height,true,0x00000000);
+			bm2.draw(s2);
+			var b2:Bitmap=new Bitmap(bm2);
+			var ss1:Sprite=new Sprite();
+			ss1.addChild(b2);
+			
+			var p4:ParallaxBackground=new ParallaxBackground(ss1,n);
+			
+			return p4;
+			
+			/*
+			var pic:Bitmap = new Picture();
+			var s2:Sprite= new Sprite();
+			s2.addChild(pic);
+			var p4:ParallaxBackground=new ParallaxBackground(s2,n);
+			return p4;
+			*/
+			
+			
+		}
+		
+	}
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx" initialize="init()"
+					   frameRate="30"
+					    width="640" height="490">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.mindfunction.smirkengine.statemachine.GameState;
+			
+			import it.flashfuck.debugger.FPSMonitor;
+			
+			import mx.core.UIComponent;
+			private function init():void{
+				var ui:UIComponent=new UIComponent();
+				addElement(ui);
+				//ui.addChild(new GameController());
+				
+				var opening:GameOpening=new GameOpening();
+				var game:GameController=new GameController();
+				
+				
+				var openingState:GameState=new GameState();
+				var mainState:GameState=new GameState();
+				
+				openingState.addExitState(mainState);
+				openingState.addEnterFunction(function(){
+					ui.addChild(opening);
+					opening.addEventListener(GameOpening.EXIT,function(){
+						openingState.exitState();
+					});
+				});
+				openingState.addExitFunction(function(){
+					trace("AGAAAAA");
+					ui.removeChild(opening);
+				});
+				
+				mainState.addEnterFunction(function(){
+					ui.addChild(game);	
+				});
+				
+				
+				
+				openingState.enterState();
+				
+				
+				
+		//		ui.addChild(new FPSMonitor());
+			}
+		]]>
+	</fx:Script>
+</s:WindowedApplication>

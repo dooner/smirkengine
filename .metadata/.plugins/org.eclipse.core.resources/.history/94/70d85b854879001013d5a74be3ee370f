@@ -1,0 +1,31 @@
+package
+{
+	import com.mindfunction.smirkengine.EntityBehaviour;
+	import com.mindfunction.smirkengine.movingPlatform.MovingPlatform;
+	
+	public class EnemyFactoryBehaviour extends EntityBehaviour
+	{
+		public function EnemyFactoryBehaviour()
+		{
+			super();
+		}
+		
+		
+		private var counter:int=0;
+		
+		protected override function updateFunction():void{
+			
+			if(counter>5){
+				var enemy:Enemy= new Enemy();
+				enemy.platform.x=ShotemUpEntity(entity).platform.x;
+				enemy.platform.y=ShotemUpEntity(entity).platform.y + Math.random()*210 - 105;
+				ShotemUpEntity(entity).parent.addChild(enemy);
+				
+				counter=0;
+			}
+			counter++;
+			
+			
+		}
+	}
+}

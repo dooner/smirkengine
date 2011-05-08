@@ -89,7 +89,7 @@ package
 					if(counter>5){
 						
 					
-						var bullet:Bullet=new Bullet();
+						var bullet:Bullet2=new Bullet2();
 						bullet.platform.xSpeed=0;
 						bullet.platform.ySpeed=0;
 						
@@ -98,6 +98,30 @@ package
 						bullet.platform.x=Hero(entity).platform.x+23;
 						bullet.platform.y=Hero(entity).platform.y;
 						entity.parent.addChild(bullet);
+						
+						
+						var bullet2:Bullet=new Bullet();
+						bullet2.platform.xSpeed=0;
+						bullet2.platform.ySpeed=-2;
+						
+						bullet2.platform.xSpeed=7;
+						
+						bullet2.platform.x=Hero(entity).platform.x+23;
+						bullet2.platform.y=Hero(entity).platform.y;
+						entity.parent.addChild(bullet2);
+
+						
+						bullet2=new Bullet();
+						bullet2.platform.xSpeed=0;
+						bullet2.platform.ySpeed=2;
+						
+						bullet2.platform.xSpeed=7;
+						
+						bullet2.platform.x=Hero(entity).platform.x+23;
+						bullet2.platform.y=Hero(entity).platform.y;
+						entity.parent.addChild(bullet2);
+
+						
 			
 						SoundEngine.singleton.playFire1();
 							

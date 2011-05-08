@@ -1,0 +1,119 @@
+package
+{
+	import flash.media.Sound;
+	import flash.media.SoundChannel;
+	import flash.media.SoundTransform;
+
+	public class SoundEngine
+	{
+		
+		private static var _singleton:SoundEngine;
+		
+		public static function get singleton():SoundEngine{
+			if(!_singleton){
+				_singleton=new SoundEngine();
+			}
+			return _singleton;
+		}
+		
+		
+		[Embed(source="fire1.mp3")]
+		private var Fire1:Class;
+		
+		private var fire1:Sound = new Fire1() as Sound; 
+		
+		[Embed(source="fire2.mp3")]
+		private var Fire2:Class;
+		private var fire2:Sound = new Fire2() as Sound;
+		
+		
+		[Embed(source="explode1.mp3")]
+		private var Explode1:Class;
+		private var explode1:Sound = new Explode1() as Sound;
+		
+		[Embed(source="explode2.mp3")]
+		private var Explode2:Class;
+		private var explode2:Sound = new Explode2() as Sound;
+		
+		[Embed(source="explode3.mp3")]
+		private var Explode3:Class;
+		private var explode3:Sound = new Explode3() as Sound;
+		
+		
+		
+		[Embed(source="action.mp3")]
+		private var Action:Class;
+		private var action:Sound = new Action() as Sound;
+		
+		[Embed(source="menu.mp3")]
+		private var Opening:Class;
+		private var opening:Sound = new Opening() as Sound;
+		
+		
+		
+		public function playExplode():void {
+			var sndChannel:SoundChannel;
+			switch(Math.floor(Math.random()*3)){
+				case 0:
+					sndChannel=explode1.play();
+					break;
+				case 1:
+					sndChannel=explode2.play();
+					break;
+				case 2:
+					sndChannel=explode3.play();
+					break;
+			}
+			if(sndChannel)
+				sndChannel.soundTransform=new SoundTransform(0.09);
+			
+		}   
+		
+		public function playFire1():void {
+			var sndChannel:SoundChannel;
+			switch(Math.floor(Math.random()*2)){
+				case 0:
+					sndChannel=fire1.play();
+					break;
+				case 1:
+					sndChannel=fire2.play();
+					break;
+			}
+			if(sndChannel){	
+				sndChannel.soundTransform=new SoundTransform(0.05);
+			}
+			
+		}   
+		
+		private var actionMusicChannel:SoundChannel;
+		public function playActionMusic():void {
+			
+			actionMusicChannel=action.play();
+			actionMusicChannel.soundTransform=new SoundTransform(1.5);
+			
+		}   
+		public function stopActionMusic():void {
+			
+			actionMusicChannel.stop();
+			
+		}   
+		
+		
+		private var openingMusicChannel:SoundChannel;
+		public function playOpeningMusic():void {
+			
+			openingMusicChannel=opening.play();
+			openingMusicChannel.soundTransform=new SoundTransform(1);
+			
+		}   
+		public function stopOpeningMusic():void {
+			
+			openingMusicChannel.stop();
+			
+		}   
+		
+		
+	
+		
+	}
+}

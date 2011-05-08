@@ -1,0 +1,106 @@
+package
+{
+	import com.mindfunction.smirkengine.Camera2DBehaviour;
+	
+	import flash.display.MovieClip;
+	import flash.display.Sprite;
+	import flash.events.Event;
+	import flash.events.KeyboardEvent;
+	
+	
+	public class GameOpening extends MovieClip
+	{
+		
+		private var game:ShotemUpGame;
+		private var camera:Camera2DBehaviour;
+		public static const EXIT:String="EXIT";
+		
+		private var opening1:ShotemUpEntity;
+		private var opening2:ShotemUpEntity;
+		private var opening3:ShotemUpEntity;
+		
+		public function GameOpening()
+		{
+			super();
+			
+			
+			
+			addEventListener(Event.REMOVED_FROM_STAGE,function():void{
+				removeEventListener(Event.ENTER_FRAME,update);
+			});
+			
+			addEventListener(Event.ADDED_TO_STAGE,function():void{
+		
+			var disp:Sprite;
+			game=new ShotemUpGame();
+			var renderer:ShotemUpGameRenderer=new ShotemUpGameRenderer();
+			game.addBehaviour(renderer);
+			
+			
+			
+			opening1=new OpeningScreen1();
+			opening1.platform.x=-160;
+			opening1.platform.y=-120;
+			opening1.renderer.alpha=0;
+			
+			
+			
+			opening2=new OpeningScreen2();
+			opening2.platform.x=-160;
+			opening2.platform.y=-120;
+			opening2.renderer.alpha=0;
+			
+			
+			
+			opening3=new OpeningScreen3();
+			opening3.platform.x=-160;
+			opening3.platform.y=-120;
+			opening3.renderer.alpha=0;
+			
+			game.addChild(opening3);
+			game.addChild(opening2);
+			game.addChild(opening1);
+			var fader1:FaderBehaviour=new FaderBehaviour();
+			
+			opening1.addBehaviour(fader1);
+			fader1.startFade();
+			
+			
+			camera=new Camera2DBehaviour(renderer,320,240,1,1);
+			addChild(camera.sprite);
+			camera.sprite.x=0;
+			camera.sprite.y=0;
+			scaleX=2;
+			scaleY=2;
+			var cameraHolder:ShotemUpEntity=new ShotemUpEntity();
+			cameraHolder.addBehaviour(camera);
+			game.addChild(cameraHolder);
+			
+			
+			SoundEngine.singleton.playOpeningMusic();
+			
+			addEventListener(Event.ENTER_FRAME,update);
+			
+				stage.addEventListener(KeyboardEvent.KEY_DOWN,keydown);
+			
+			});
+			
+			
+		}
+		
+		private function keydown(e:Event):void{
+			stage.removeEventListener(KeyboardEvent.KEY_DOWN,keydown);
+			SoundEngine.singleton.stopOpeningMusic();
+			dispatchEvent(new Event(EXIT));
+			
+		}
+		
+		private function update(e:Event):void{
+			camera.lockBitmap();
+			//MovingPlatform(camera.entity).platform.x+=3;
+			
+			game.update();		
+			camera.unlockBitmap();
+		}
+	}
+}

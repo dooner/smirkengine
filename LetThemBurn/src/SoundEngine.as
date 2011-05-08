@@ -45,6 +45,15 @@ package
 		private var Action:Class;
 		private var action:Sound = new Action() as Sound;
 		
+		[Embed(source="menu.mp3")]
+		private var Opening:Class;
+		private var opening:Sound = new Opening() as Sound;
+		
+		[Embed(source="enter.mp3")]
+		private var Enter:Class;
+		private var enter:Sound = new Enter() as Sound;
+		
+		
 		
 		
 		public function playExplode():void {
@@ -60,8 +69,8 @@ package
 					sndChannel=explode3.play();
 					break;
 			}
-			
-			sndChannel.soundTransform=new SoundTransform(0.2);
+			if(sndChannel)
+				sndChannel.soundTransform=new SoundTransform(0.09);
 			
 		}   
 		
@@ -75,21 +84,52 @@ package
 					sndChannel=fire2.play();
 					break;
 			}
-				
-			sndChannel.soundTransform=new SoundTransform(0.09);
+			if(sndChannel){	
+				sndChannel.soundTransform=new SoundTransform(0.05);
+			}
 			
 		}   
 		
 		
-		public function playActionMusic():void {
+		public function playEnter():void {
 			var sndChannel:SoundChannel;
-			sndChannel=action.play();
-			sndChannel.soundTransform=new SoundTransform(2.3);
 			
-			
+			sndChannel=enter.play();
+				
+			sndChannel.soundTransform=new SoundTransform(0.2);
 			
 			
 		}   
+		
+		private var actionMusicChannel:SoundChannel;
+		public function playActionMusic():void {
+			
+			actionMusicChannel=action.play();
+			actionMusicChannel.soundTransform=new SoundTransform(1.5);
+			
+		}   
+		public function stopActionMusic():void {
+			
+			actionMusicChannel.stop();
+			
+		}   
+		
+		
+		public var openingMusicChannel:SoundChannel;
+		public function playOpeningMusic():void {
+			
+			openingMusicChannel=opening.play();
+			openingMusicChannel.soundTransform=new SoundTransform(1);
+			
+		}   
+		public function stopOpeningMusic():void {
+			
+			openingMusicChannel.stop();
+			
+		}   
+		
+		
+	
 		
 	}
 }

@@ -1,0 +1,9 @@
+package
+{
+	public class OpeningScreen2 extens ShotemUpEntity
+	{
+		public function OpeningScreen2()
+		{
+		}
+	}
+}

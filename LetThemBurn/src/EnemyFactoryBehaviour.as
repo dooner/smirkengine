@@ -15,7 +15,7 @@ package
 		
 		protected override function updateFunction():void{
 			
-			if(counter>5){
+			if(counter>1){
 				var enemy:Enemy= new Enemy();
 				enemy.platform.x=ShotemUpEntity(entity).platform.x;
 				enemy.platform.y=ShotemUpEntity(entity).platform.y + Math.random()*210 - 105;

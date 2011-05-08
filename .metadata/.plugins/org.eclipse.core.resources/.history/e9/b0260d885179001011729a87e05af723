@@ -1,0 +1,66 @@
+package
+{
+	import com.mindfunction.smirkengine.Camera2DBehaviour;
+	
+	import flash.display.MovieClip;
+	import flash.events.Event;
+	
+	public class GameOpening extends MovieClip
+	{
+		public function GameOpening()
+		{
+			super();
+			
+			
+			var game:ShotemUpGame=new ShotemUpGame();
+			var renderer:ShotemUpGameRenderer=new ShotemUpGameRenderer();
+			game.addBehaviour(renderer);
+			
+			
+			
+			var opening1:OpeningScreen1=new OpeningScreen1();
+			opening1.platform.x=-160;
+			opening1.platform.y=-120;
+			
+			game.addChild(opening1);
+			
+			
+			var opening2:OpeningScreen2=new OpeningScreen2();
+			opening2.platform.x=-160;
+			opening2.platform.y=-120;
+			
+			game.addChild(opening2);
+			
+			
+			var opening3:OpeningScreen3=new OpeningScreen3();
+			opening3.platform.x=-160;
+			opening3.platform.y=-120;
+			
+			game.addChild(opening3);
+			
+			var camera:Camera2DBehaviour=new Camera2DBehaviour(renderer,320,240,1,1);
+			
+			
+			
+			addChild(camera.sprite);
+			camera.sprite.scaleX=camera.sprite.scaleY=20;
+			camera.sprite.scaleX=0.1;
+			camera.sprite.x=0;
+			camera.sprite.y=0;
+			
+			var cameraHolder:ShotemUpEntity=new ShotemUpEntity();
+			cameraHolder.addBehaviour(camera);
+			game.addChild(cameraHolder);
+			
+			
+			SoundEngine.singleton.playOpeningMusic();
+			
+			addEventListener(Event.ENTER_FRAME,function():void{
+				camera.lockBitmap();
+				//MovingPlatform(camera.entity).platform.x+=3;
+				game.update();		
+				camera.unlockBitmap();
+			});	
+		}
+	}
+}

@@ -1,16 +1,20 @@
 package
 {
 	import com.mindfunction.smirkengine.Entity;
-	
 	import com.mindfunction.smirkengine.movingPlatform.MovingPlatform;
+	
+	
 	
 
 	public class ShotemUpEntity extends MovingPlatform
 	{
+	
+		public var renderer:Render2DBehaviour=new Render2DBehaviour();
 		
 		public function ShotemUpEntity()
 		{
 			super();
+			 addBehaviour(renderer);
 		}
 	}
 }

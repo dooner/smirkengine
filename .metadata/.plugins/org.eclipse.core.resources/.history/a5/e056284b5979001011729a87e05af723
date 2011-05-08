@@ -1,0 +1,16 @@
+package
+{
+	import com.mindfunction.smirkengine.EntityBehaviour;
+	
+	public class FaderBehaviour extends EntityBehaviour
+	{
+		public function FaderBehaviour()
+		{
+			super();
+		}
+		
+		protected override function updateFunction():void{
+			ShotemUpEntity(entity).renderer.alpha+=0.01;
+		}
+	}
+}

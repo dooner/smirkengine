@@ -1,0 +1,9 @@
+package
+{
+	public class OpeningScreen2
+	{
+		public function OpeningScreen2()
+		{
+		}
+	}
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="32" version="2.0">
+<workbench progressCount="33" version="2.0">
 <workbenchAdvisor/>
 <window height="778" width="1280" x="5" y="22">
 <fastViewData fastViewLocation="1024">
@@ -61,145 +61,134 @@
 <part id="27"/>
 <part id="28"/>
 <part id="29"/>
-<part id="30"/>
-<part id="31"/>
-<part id="32"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="GDL_Shoot_Em_Up.mxml" partName="GDL_Shoot_Em_Up.mxml" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/GDL_Shoot_Em_Up.mxml" title="GDL_Shoot_Em_Up.mxml" tooltip="GDL_Shoot_Em_Up/src/GDL_Shoot_Em_Up.mxml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/GDL_Shoot_Em_Up.mxml"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameController.as" partName="GameController.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/GameController.as" title="GameController.as" tooltip="GDL_Shoot_Em_Up/src/GameController.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/GameController.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2829" selectionTopPixel="1549"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="gdlweb.mxml" partName="gdlweb.mxml" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/gdlweb/src/gdlweb.mxml" title="gdlweb.mxml" tooltip="gdlweb/src/gdlweb.mxml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gdlweb/src/gdlweb.mxml"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Camera2DBehaviour.as" partName="Camera2DBehaviour.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/Camera2DBehaviour.as" title="Camera2DBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/Camera2DBehaviour.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/Camera2DBehaviour.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3775" selectionTopPixel="2304"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ParallaxBackground.as" partName="ParallaxBackground.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/ParallaxBackground.as" title="ParallaxBackground.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/ParallaxBackground.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/ParallaxBackground.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="393" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameRenderer.as" partName="GameRenderer.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/GameRenderer.as" title="GameRenderer.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/GameRenderer.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/GameRenderer.as"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="SceneState.as" partName="SceneState.as" path="/Users/cihanozcelik/Projects/smirkengine/implementation/com/mindfunction/game/statemachine/SceneState.as" title="SceneState.as" tooltip="implementation/com/mindfunction/game/statemachine/SceneState.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/implementation/com/mindfunction/game/statemachine/SceneState.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ShotEmUpGameRenderer.as" partName="ShotEmUpGameRenderer.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/ShotEmUpGameRenderer.as" title="ShotEmUpGameRenderer.as" tooltip="GDL_Shoot_Em_Up/src/ShotEmUpGameRenderer.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/ShotEmUpGameRenderer.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1683" selectionTopPixel="1069"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Enemy.as" partName="Enemy.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/Enemy.as" title="Enemy.as" tooltip="GDL_Shoot_Em_Up/src/Enemy.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/Enemy.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="367" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BulletTargetBehaviour.as" partName="BulletTargetBehaviour.as" path="/Users/cihanozcelik/Projects/smirkengine/ShootemUpGame/src/BulletTargetBehaviour.as" title="BulletTargetBehaviour.as" tooltip="ShootemUpGame/src/BulletTargetBehaviour.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShootemUpGame/src/BulletTargetBehaviour.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1252" selectionTopPixel="557"/>
-</editor>
-<editor activePart="true" focus="true" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Bullet.as" partName="Bullet.as" path="/Users/cihanozcelik/Projects/smirkengine/ShootemUpGame/src/Bullet.as" title="Bullet.as" tooltip="ShootemUpGame/src/Bullet.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShootemUpGame/src/Bullet.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="519" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Hero.as" partName="Hero.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/Hero.as" title="Hero.as" tooltip="GDL_Shoot_Em_Up/src/Hero.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/Hero.as"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameState.as" partName="GameState.as" path="/Users/cihanozcelik/Projects/smirkengine/implementation/com/mindfunction/game/statemachine/GameState.as" title="GameState.as" tooltip="implementation/com/mindfunction/game/statemachine/GameState.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/implementation/com/mindfunction/game/statemachine/GameState.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="HeroController.as" partName="HeroController.as" path="/Users/cihanozcelik/Projects/smirkengine/ShootemUpGame/src/HeroController.as" title="HeroController.as" tooltip="ShootemUpGame/src/HeroController.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShootemUpGame/src/HeroController.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="191" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="JumpingBehaviour.as" partName="JumpingBehaviour.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/JumpingBehaviour.as" title="JumpingBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/JumpingBehaviour.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/JumpingBehaviour.as"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="StateChangingCondition.as" partName="StateChangingCondition.as" path="/Users/cihanozcelik/Projects/smirkengine/implementation/com/mindfunction/game/statemachine/StateChangingCondition.as" title="StateChangingCondition.as" tooltip="implementation/com/mindfunction/game/statemachine/StateChangingCondition.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/implementation/com/mindfunction/game/statemachine/StateChangingCondition.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Particle.as" partName="Particle.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/Particle.as" title="Particle.as" tooltip="GDL_Shoot_Em_Up/src/Particle.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/Particle.as"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameState.as" partName="GameState.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/statemachine/GameState.as" title="GameState.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/statemachine/GameState.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/statemachine/GameState.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="666" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="SceneState.as" partName="SceneState.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/statemachine/SceneState.as" title="SceneState.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/statemachine/SceneState.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/statemachine/SceneState.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="167" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="StateChangingCondition.as" partName="StateChangingCondition.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/statemachine/StateChangingCondition.as" title="StateChangingCondition.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/statemachine/StateChangingCondition.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/statemachine/StateChangingCondition.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="170" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameRenderer.as" partName="GameRenderer.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/GameRenderer.as" title="GameRenderer.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/GameRenderer.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/GameRenderer.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ShotEmUpEntity.as" partName="ShotEmUpEntity.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/ShotEmUpEntity.as" title="ShotEmUpEntity.as" tooltip="GDL_Shoot_Em_Up/src/ShotEmUpEntity.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/ShotEmUpEntity.as"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Game.as" partName="Game.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/Game.as" title="Game.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/Game.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/Game.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ShotEmUpGame.as" partName="ShotEmUpGame.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/ShotEmUpGame.as" title="ShotEmUpGame.as" tooltip="GDL_Shoot_Em_Up/src/ShotEmUpGame.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/ShotEmUpGame.as"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityObserver.as" partName="EntityObserver.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/EntityObserver.as" title="EntityObserver.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/EntityObserver.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/EntityObserver.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="596" selectionTopPixel="64"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityBehaviour.as" partName="EntityBehaviour.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/EntityBehaviour.as" title="EntityBehaviour.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/EntityBehaviour.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/EntityBehaviour.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="686" selectionTopPixel="365"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Entity.as" partName="Entity.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/Entity.as" title="Entity.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/Entity.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/Entity.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2483" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Bullet.as" partName="Bullet.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/Bullet.as" title="Bullet.as" tooltip="LetThemBurn/src/Bullet.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/Bullet.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="245" selectionOffset="261" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Bullet2.as" partName="Bullet2.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/Bullet2.as" title="Bullet2.as" tooltip="LetThemBurn/src/Bullet2.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/Bullet2.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="309" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="HeroController.as" partName="HeroController.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/HeroController.as" title="HeroController.as" tooltip="LetThemBurn/src/HeroController.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/HeroController.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1884" selectionTopPixel="1757"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ShotemUpGameRenderer.as" partName="ShotemUpGameRenderer.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/ShotemUpGameRenderer.as" title="ShotemUpGameRenderer.as" tooltip="LetThemBurn/src/ShotemUpGameRenderer.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/ShotemUpGameRenderer.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3225" selectionTopPixel="1856"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BulletTargetBehaviour.as" partName="BulletTargetBehaviour.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/BulletTargetBehaviour.as" title="BulletTargetBehaviour.as" tooltip="LetThemBurn/src/BulletTargetBehaviour.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/BulletTargetBehaviour.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1289" selectionTopPixel="352"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EnemyFactory.as" partName="EnemyFactory.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/EnemyFactory.as" title="EnemyFactory.as" tooltip="LetThemBurn/src/EnemyFactory.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/EnemyFactory.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ChanellCouple.as" partName="ChanellCouple.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/collider/ChanellCouple.as" title="ChanellCouple.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/collider/ChanellCouple.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/collider/ChanellCouple.as"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EnemyFactoryBehaviour.as" partName="EnemyFactoryBehaviour.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/EnemyFactoryBehaviour.as" title="EnemyFactoryBehaviour.as" tooltip="LetThemBurn/src/EnemyFactoryBehaviour.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/EnemyFactoryBehaviour.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="369" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="SoundEngine.as" partName="SoundEngine.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/SoundEngine.as" title="SoundEngine.as" tooltip="LetThemBurn/src/SoundEngine.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/SoundEngine.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2132" selectionTopPixel="1280"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ColliderEngine.as" partName="ColliderEngine.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/collider/ColliderEngine.as" title="ColliderEngine.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/collider/ColliderEngine.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/collider/ColliderEngine.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="543" selectionTopPixel="480"/>
+</editor>
+<editor activePart="true" focus="true" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameController.as" partName="GameController.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/GameController.as" title="GameController.as" tooltip="LetThemBurn/src/GameController.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/GameController.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3460" selectionTopPixel="1824"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="OpeningScreen2.as" partName="OpeningScreen2.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/OpeningScreen2.as" title="OpeningScreen2.as" tooltip="LetThemBurn/src/OpeningScreen2.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/OpeningScreen2.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="115" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="OpeningScreen1.as" partName="OpeningScreen1.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/OpeningScreen1.as" title="OpeningScreen1.as" tooltip="LetThemBurn/src/OpeningScreen1.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/OpeningScreen1.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="CollidedEvent.as" partName="CollidedEvent.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/collider/CollidedEvent.as" title="CollidedEvent.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/collider/CollidedEvent.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/collider/CollidedEvent.as"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ShotemUpEntity.as" partName="ShotemUpEntity.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/ShotemUpEntity.as" title="ShotemUpEntity.as" tooltip="LetThemBurn/src/ShotemUpEntity.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/ShotemUpEntity.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ColliderBehaviour.as" partName="ColliderBehaviour.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/collider/ColliderBehaviour.as" title="ColliderBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/collider/ColliderBehaviour.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/collider/ColliderBehaviour.as"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityAddedEvent.as" partName="EntityAddedEvent.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/EntityAddedEvent.as" title="EntityAddedEvent.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/EntityAddedEvent.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/EntityAddedEvent.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ColliderEngine.as" partName="ColliderEngine.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/collider/ColliderEngine.as" title="ColliderEngine.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/collider/ColliderEngine.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/collider/ColliderEngine.as"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="KeyboardController.as" partName="KeyboardController.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/general/KeyboardController.as" title="KeyboardController.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/general/KeyboardController.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/general/KeyboardController.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="461" selectionTopPixel="80"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ColliderBehaviour.as" partName="ColliderBehaviour.as" path="/Users/cihanozcelik/Projects/smirkengine/smirkengine/src/com/mindfunction/smirkengine/collider/ColliderBehaviour.as" title="ColliderBehaviour.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/collider/ColliderBehaviour.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smirkengine/src/com/mindfunction/smirkengine/collider/ColliderBehaviour.as"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="KeyboardController.as" partName="KeyboardController.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/general/KeyboardController.as" title="KeyboardController.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/general/KeyboardController.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/general/KeyboardController.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameOpening.as" partName="GameOpening.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/GameOpening.as" title="GameOpening.as" tooltip="LetThemBurn/src/GameOpening.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/GameOpening.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2302" selectionTopPixel="1405"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="LifeTimeBehaviour.as" partName="LifeTimeBehaviour.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/general/LifeTimeBehaviour.as" title="LifeTimeBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/general/LifeTimeBehaviour.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/general/LifeTimeBehaviour.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="ShootemUpGame.mxml" partName="ShootemUpGame.mxml" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/ShootemUpGame.mxml" title="ShootemUpGame.mxml" tooltip="LetThemBurn/src/ShootemUpGame.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/ShootemUpGame.mxml"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MovingPlatform.as" partName="MovingPlatform.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatform.as" title="MovingPlatform.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatform.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatform.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MovingPlatformBehaviour.as" partName="MovingPlatformBehaviour.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatformBehaviour.as" title="MovingPlatformBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatformBehaviour.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatformBehaviour.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MovingPlatformEngine.as" partName="MovingPlatformEngine.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatformEngine.as" title="MovingPlatformEngine.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatformEngine.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatformEngine.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityBehaviour.as" partName="EntityBehaviour.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/EntityBehaviour.as" title="EntityBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/EntityBehaviour.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/EntityBehaviour.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityObserver.as" partName="EntityObserver.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/EntityObserver.as" title="EntityObserver.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/EntityObserver.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/EntityObserver.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityRemovedEvent.as" partName="EntityRemovedEvent.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/EntityRemovedEvent.as" title="EntityRemovedEvent.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/EntityRemovedEvent.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/EntityRemovedEvent.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Game.as" partName="Game.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/Game.as" title="Game.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/Game.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/Game.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityAddedEvent.as" partName="EntityAddedEvent.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/EntityAddedEvent.as" title="EntityAddedEvent.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/EntityAddedEvent.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/EntityAddedEvent.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Entity.as" partName="Entity.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/Entity.as" title="Entity.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/Entity.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/Entity.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BehaviourRemovedEvent.as" partName="BehaviourRemovedEvent.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/BehaviourRemovedEvent.as" title="BehaviourRemovedEvent.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/BehaviourRemovedEvent.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/BehaviourRemovedEvent.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BehaviourAddedEvent.as" partName="BehaviourAddedEvent.as" path="/Users/cihanozcelik/Projects/KarGrup/P2CADNEW/GDL_Shoot_Em_Up/src/smirkengine/BehaviourAddedEvent.as" title="BehaviourAddedEvent.as" tooltip="GDL_Shoot_Em_Up/src/smirkengine/BehaviourAddedEvent.as" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GDL_Shoot_Em_Up/src/smirkengine/BehaviourAddedEvent.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="FaderBehaviour.as" partName="FaderBehaviour.as" path="/Users/cihanozcelik/Projects/smirkengine/LetThemBurn/src/FaderBehaviour.as" title="FaderBehaviour.as" tooltip="LetThemBurn/src/FaderBehaviour.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LetThemBurn/src/FaderBehaviour.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="869" selectionTopPixel="189"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
+</view>
 <view id="com.adobe.flash.profiler.ui.Monitor" partName="Profile"/>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
@@ -212,14 +201,6 @@
 </view>
 <view id="com.adobe.flexbuilder.packageexplorer" partName="Package Explorer">
 <viewState LINK_NAVIGATOR_TO_EDITOR="0" fpeIsFlat="0" fpeSortBy="1" sorter="1">
-<fpeExpanded>
-<fpeElement fpePath="/ShootemUpGame"/>
-<fpeElement fpePath="/ShootemUpGame/src"/>
-<fpeElement fpePath="/ShootemUpGame/src/%typeDefaultPackage"/>
-</fpeExpanded>
-<fpeSelection>
-<fpeElement fpePath="/ShootemUpGame/src/JumpingBehaviour.as"/>
-</fpeSelection>
 <filters>
 <filter element=".*" isEnabled="false"/>
 <filter element=".flexProperties" isEnabled="true"/>
@@ -241,19 +222,18 @@
 <currentFrame>
 <frameInput factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 <expanded>
-<element factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/P2CADProtoype" type="4"/>
-<element factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/P2CADProtoype/src/design/DesignView.mxml" type="1"/>
+<element factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DESIGNER" type="4"/>
 </expanded>
 </currentFrame>
 </viewState>
 </view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints"/>
 <view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" partName="Network Monitor">
 <viewState/>
 </view>
 <view id="org.eclipse.debug.ui.VariableView" partName="Variables">
 <viewState/>
 </view>
-<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
@@ -261,6 +241,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="1147"/>
@@ -274,13 +255,15 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
-<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" partName="Data/Services"/>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" partName="Data/Services">
+<viewState/>
+</view>
 <view id="com.adobe.flexbuilder.as.editor.asdocviewer" partName="ASDoc">
 <viewState/>
 </view>
 <view id="com.adobe.flash.profiler.ui.OfflineMonitor" partName="Saved Profiling Data"/>
 </views>
-<perspectives activePart="com.adobe.flexbuilder.packageexplorer" activePerspective="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development">
+<perspectives activePart="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" activePerspective="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.adobe.flexbuilder.mxml.editor.ui.perspectives.DevelopmentPerspectiveFactory" id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development" label="Flash"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -296,9 +279,9 @@
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="com.adobe.flexbuilder.debug.ui.flexDebuggingActionSet"/>
 <alwaysOnActionSet id="com.adobe.flexbuilder.zzz.editors.common.ui.project.publish"/>
-<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <alwaysOnActionSet id="com.adobe.flexbuilder.as.editor.ui.NavigationActions"/>
 <alwaysOnActionSet id="com.adobe.flexbuilder.dcrad.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="com.adobe.flexbuilder.mxml.editor.AppearanceView"/>
 <show_view_action id="com.adobe.flexbuilder.mxml.editor.components.ComponentsView"/>
 <show_view_action id="com.adobe.flexbuilder.packageexplorer"/>
@@ -332,12 +315,11 @@
 <view id="com.adobe.flexbuilder.packageexplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
-<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
-<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="com.adobe.flexbuilder.as.editor.asdocviewer"/>
+<view id="org.eclipse.ui.views.ProgressView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -371,14 +353,15 @@
 </folder>
 </info>
 <info folder="true" part="bottomLayout" ratio="0.7173913" ratioLeft="495" ratioRight="195" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="Data/Services"/>
-<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="Network Monitor"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="com.adobe.flexbuilder.as.editor.asdocviewer" label="ASDoc"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
+<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="LabelNotFound"/>
+<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -386,11 +369,10 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="outlineHolder" ratio="0.68550724" ratioLeft="473" ratioRight="217" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1b02910">
+<info folder="true" part="outlineHolder" ratio="0.8594203" ratioLeft="593" ratioRight="97" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1b02910">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="com.adobe.flexbuilder.mxml.editor.components.ComponentsView" label="LabelNotFound"/>
@@ -580,199 +562,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/EntityBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/Game.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/GameRenderer.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/ParallaxBackground.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/EntityAddedEvent.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/Entity.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/Camera2DBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/BehaviourRemovedEvent.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/basicEngine/BehaviourAddedEvent.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/collider/ChanellCouple.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/collider/CollidedEvent.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/collider/ColliderBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/collider/ColliderEngine.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/general/KeyboardController.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/general/LifeTimeBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatform.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatformBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/movingPlatform/MovingPlatformEngine.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/EntityBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/EntityObserver.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/EntityRemovedEvent.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/Game.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/GameRenderer.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/ParallaxBackground.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/EntityAddedEvent.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/Entity.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/Camera2DBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/BehaviourRemovedEvent.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/smirkengine/BehaviourAddedEvent.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/BulletTargetBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/BitmapDeneme/src/BitmapDeneme.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/Bullet.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/GDL_Shoot_Em_Up/src/HeroController.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SideScrollingShooter/src/Bullet.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SideScrollingShooter/src/HeroController.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/SideScrollingShooter/src/BulletTargetBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUp/src/Bullet.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUp/src/HeroController.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUp/src/BulletTargetBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUpGame/src/Bullet.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUpGame/src/HeroController.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootemUpGame/src/BulletTargetBehaviour.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/ShootetUpGameWebTest/[source path] src/GameController.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LetThemBurn/src/GameController.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LetThemBurn/src/GameOpening.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/LetThemBurn/src/ShootemUpGame.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LetThemBurn/src/SoundEngine.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LetThemBurn/src/FaderBehaviour.as"/>
 </editors>
-<item historyLabel="Game.as" index="1">
+<item historyLabel="ShootemUpGame.mxml" index="2">
+<position info="not_deleted" x="282" y="0"/>
+</item>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="1678" y="0"/>
+</item>
+<item historyLabel="GameController.as" index="0">
+<position info="not_deleted" x="2252" y="0"/>
+</item>
+<item historyLabel="SoundEngine.as" index="3">
+<position info="not_deleted" x="2046" y="0"/>
+</item>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="1678" y="0"/>
+</item>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
+</item>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
+</item>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="2190" y="0"/>
+</item>
+<item historyLabel="FaderBehaviour.as" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GameRenderer.as" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position/>
 </item>
-<item historyLabel="ParallaxBackground.as" index="3">
-<position info="not_deleted" x="393" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position info="not_deleted" x="1105" y="0"/>
 </item>
-<item historyLabel="EntityBehaviour.as" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="1414" y="0"/>
 </item>
-<item historyLabel="EntityAddedEvent.as" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position info="not_deleted" x="367" y="0"/>
 </item>
-<item historyLabel="Entity.as" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ShootemUpGame.mxml" index="2">
+<position info="not_deleted" x="282" y="0"/>
 </item>
-<item historyLabel="Camera2DBehaviour.as" index="6">
-<position info="not_deleted" x="3775" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="1414" y="0"/>
 </item>
-<item historyLabel="BehaviourRemovedEvent.as" index="7">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="1389" y="0"/>
 </item>
-<item historyLabel="BehaviourAddedEvent.as" index="8">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="1370" y="0"/>
 </item>
-<item historyLabel="ChanellCouple.as" index="9">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="CollidedEvent.as" index="10">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="ColliderBehaviour.as" index="11">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="ColliderEngine.as" index="12">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="1643" y="0"/>
 </item>
-<item historyLabel="KeyboardController.as" index="13">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position info="not_deleted" x="808" y="0"/>
 </item>
-<item historyLabel="LifeTimeBehaviour.as" index="14">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="1533" y="0"/>
 </item>
-<item historyLabel="MovingPlatform.as" index="15">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position info="not_deleted" x="808" y="0"/>
 </item>
-<item historyLabel="MovingPlatformBehaviour.as" index="16">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position/>
 </item>
-<item historyLabel="MovingPlatformEngine.as" index="17">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position/>
 </item>
-<item historyLabel="EntityBehaviour.as" index="18">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position/>
 </item>
-<item historyLabel="EntityObserver.as" index="19">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position/>
 </item>
-<item historyLabel="EntityRemovedEvent.as" index="20">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position/>
 </item>
-<item historyLabel="Game.as" index="21">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="FaderBehaviour.as" index="4">
+<position info="not_deleted" x="869" y="0"/>
 </item>
-<item historyLabel="GameRenderer.as" index="22">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="SoundEngine.as" index="3">
+<position info="not_deleted" x="2362" y="0"/>
 </item>
-<item historyLabel="ParallaxBackground.as" index="23">
-<position info="not_deleted" x="393" y="0"/>
+<item historyLabel="ShootemUpGame.mxml" index="2">
+<position info="not_deleted" x="282" y="0"/>
 </item>
-<item historyLabel="EntityAddedEvent.as" index="24">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="SoundEngine.as" index="3">
+<position info="not_deleted" x="1525" y="0"/>
 </item>
-<item historyLabel="Entity.as" index="25">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameController.as" index="0">
+<position info="not_deleted" x="2196" y="0"/>
 </item>
-<item historyLabel="Camera2DBehaviour.as" index="26">
-<position info="not_deleted" x="3775" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="1533" y="0"/>
 </item>
-<item historyLabel="BehaviourRemovedEvent.as" index="27">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="BehaviourAddedEvent.as" index="28">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="EntityObserver.as" index="19">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="GameRenderer.as" index="22">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="Game.as" index="21">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="SoundEngine.as" index="3">
+<position info="not_deleted" x="2165" y="0"/>
 </item>
-<item historyLabel="MovingPlatformEngine.as" index="17">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="BulletTargetBehaviour.as" index="29">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="BitmapDeneme.as" index="30">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="BulletTargetBehaviour.as" index="29">
-<position info="not_deleted" x="1184" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position/>
 </item>
-<item historyLabel="Bullet.as" index="31">
-<position info="not_deleted" x="260" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="2510" y="0"/>
 </item>
-<item historyLabel="HeroController.as" index="32">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="SoundEngine.as" index="3">
+<position info="not_deleted" x="2165" y="0"/>
 </item>
-<item historyLabel="Bullet.as" index="33">
-<position info="not_deleted" x="260" y="0"/>
+<item historyLabel="GameOpening.as" index="1">
+<position info="not_deleted" x="2302" y="0"/>
 </item>
-<item historyLabel="HeroController.as" index="34">
-<position info="not_deleted" x="174" y="0"/>
+<item historyLabel="SoundEngine.as" index="3">
+<position info="not_deleted" x="2132" y="0"/>
 </item>
-<item historyLabel="BulletTargetBehaviour.as" index="35">
-<position info="not_deleted" x="1184" y="0"/>
+<item historyLabel="ShootemUpGame.mxml" index="2">
+<position info="not_deleted" x="282" y="0"/>
 </item>
-<item historyLabel="Bullet.as" index="36">
-<position info="not_deleted" x="260" y="0"/>
-</item>
-<item historyLabel="HeroController.as" index="37">
-<position info="not_deleted" x="174" y="0"/>
-</item>
-<item historyLabel="BulletTargetBehaviour.as" index="38">
-<position info="not_deleted" x="1184" y="0"/>
-</item>
-<item historyLabel="Bullet.as" index="39">
-<position info="not_deleted" x="260" y="0"/>
-</item>
-<item historyLabel="HeroController.as" index="40">
-<position info="not_deleted" x="174" y="0"/>
-</item>
-<item historyLabel="BulletTargetBehaviour.as" index="41">
-<position info="not_deleted" x="1184" y="0"/>
-</item>
-<item historyLabel="GameController.as" index="42">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="HeroController.as" index="40">
-<position info="not_deleted" x="174" y="0"/>
-</item>
-<item active="true" historyLabel="Bullet.as" index="39">
-<position info="not_deleted" x="294" y="0"/>
+<item active="true" historyLabel="GameController.as" index="0">
+<position info="not_deleted" x="2196" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DESIGNER" type="4"/>
@@ -791,50 +735,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameController.as" tooltip="ShootetUpGameWebTest/[source path] src/GameController.as">
-<persistable path="/ShootetUpGameWebTest/[source path] src/GameController.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="FaderBehaviour.as" tooltip="LetThemBurn/src/FaderBehaviour.as">
+<persistable path="/LetThemBurn/src/FaderBehaviour.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BitmapDeneme.as" tooltip="BitmapDeneme/src/BitmapDeneme.as">
-<persistable path="/BitmapDeneme/src/BitmapDeneme.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="ShootemUpGame.mxml" tooltip="LetThemBurn/src/ShootemUpGame.mxml">
+<persistable path="/LetThemBurn/src/ShootemUpGame.mxml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BehaviourAddedEvent.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/BehaviourAddedEvent.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/BehaviourAddedEvent.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameOpening.as" tooltip="LetThemBurn/src/GameOpening.as">
+<persistable path="/LetThemBurn/src/GameOpening.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BehaviourRemovedEvent.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/BehaviourRemovedEvent.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/BehaviourRemovedEvent.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ColliderBehaviour.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/collider/ColliderBehaviour.as">
+<persistable path="/smirkengine/src/com/mindfunction/smirkengine/collider/ColliderBehaviour.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Entity.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/Entity.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/Entity.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="KeyboardController.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/general/KeyboardController.as">
+<persistable path="/smirkengine/src/com/mindfunction/smirkengine/general/KeyboardController.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityAddedEvent.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/EntityAddedEvent.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/EntityAddedEvent.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityAddedEvent.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/EntityAddedEvent.as">
+<persistable path="/smirkengine/src/com/mindfunction/smirkengine/EntityAddedEvent.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Game.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/Game.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/Game.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ShotemUpEntity.as" tooltip="LetThemBurn/src/ShotemUpEntity.as">
+<persistable path="/LetThemBurn/src/ShotemUpEntity.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityRemovedEvent.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/EntityRemovedEvent.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/EntityRemovedEvent.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ShotemUpGame.as" tooltip="LetThemBurn/src/ShotemUpGame.as">
+<persistable path="/LetThemBurn/src/ShotemUpGame.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityObserver.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/EntityObserver.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/EntityObserver.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="OpeningScreen1.as" tooltip="LetThemBurn/src/OpeningScreen1.as">
+<persistable path="/LetThemBurn/src/OpeningScreen1.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EntityBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/EntityBehaviour.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/EntityBehaviour.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="OpeningScreen2.as" tooltip="LetThemBurn/src/OpeningScreen2.as">
+<persistable path="/LetThemBurn/src/OpeningScreen2.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MovingPlatformEngine.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/movingPlatform/MovingPlatformEngine.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/movingPlatform/MovingPlatformEngine.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameController.as" tooltip="LetThemBurn/src/GameController.as">
+<persistable path="/LetThemBurn/src/GameController.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MovingPlatformBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/movingPlatform/MovingPlatformBehaviour.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/movingPlatform/MovingPlatformBehaviour.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ColliderEngine.as" tooltip="smirkengine/src/com/mindfunction/smirkengine/collider/ColliderEngine.as">
+<persistable path="/smirkengine/src/com/mindfunction/smirkengine/collider/ColliderEngine.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MovingPlatform.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/movingPlatform/MovingPlatform.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/movingPlatform/MovingPlatform.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="SoundEngine.as" tooltip="LetThemBurn/src/SoundEngine.as">
+<persistable path="/LetThemBurn/src/SoundEngine.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="LifeTimeBehaviour.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/general/LifeTimeBehaviour.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/general/LifeTimeBehaviour.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EnemyFactoryBehaviour.as" tooltip="LetThemBurn/src/EnemyFactoryBehaviour.as">
+<persistable path="/LetThemBurn/src/EnemyFactoryBehaviour.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="KeyboardController.as" tooltip="GDL_Shoot_Em_Up/src/basicEngine/general/KeyboardController.as">
-<persistable path="/GDL_Shoot_Em_Up/src/basicEngine/general/KeyboardController.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EnemyFactory.as" tooltip="LetThemBurn/src/EnemyFactory.as">
+<persistable path="/LetThemBurn/src/EnemyFactory.as"/>
 </file>
 </mruList>
 </workbench>

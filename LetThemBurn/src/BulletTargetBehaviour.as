@@ -26,7 +26,7 @@ package
 		
 		private function collidedEvent(e:CollidedEvent):void{
 			//trace("Bullet Carpti bana " + Object(e.targetCollider).constructor);
-			if(Object(e.targetCollider.entity).constructor == Bullet){
+			
 			//	trace("Bullet Carpti bana");
 				
 				for(var i:Number=0;i<5;i++){
@@ -47,7 +47,7 @@ package
 				
 				SoundEngine.singleton.playExplode();
 				
-			}
+			
 		}
 		
 		protected virtual override function deactivationFunction():void{

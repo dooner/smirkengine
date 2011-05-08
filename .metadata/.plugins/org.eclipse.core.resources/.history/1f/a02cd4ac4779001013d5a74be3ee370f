@@ -1,0 +1,10 @@
+package
+{
+	public class Bullet2 extends ShotemUpEntity
+	{
+		public function Bullet2()
+		{
+			super();
+		}
+	}
+}

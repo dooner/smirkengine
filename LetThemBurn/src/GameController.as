@@ -25,17 +25,26 @@ package
 	
 	public class GameController extends MovieClip
 	{
+		
+		private var game:ShotemUpGame;
+		private var camera:Camera2DBehaviour;
+		
 		public function GameController()
 		{
 			super();
-			
+			alpha=0;
 			var disp:Sprite;
-			
+			addEventListener(Event.REMOVED_FROM_STAGE,function():void{
+				removeEventListener(Event.ENTER_FRAME,update);
+			});
 			addEventListener(Event.ADDED_TO_STAGE,function():void{
 				
 			
-				var game:ShotemUpGame=new ShotemUpGame();
+				game=new ShotemUpGame();
 			
+				
+				
+				
 				var movingPlatformEngine:MovingPlatformEngine=new MovingPlatformEngine();
 				var colliderEngine:ColliderEngine=new ColliderEngine();
 				colliderEngine.addChannelCouple(1,2);
@@ -65,11 +74,13 @@ package
 				
 				hero.addBehaviour(heroController);
 			
-				hero.platform.x=0;
+				hero.platform.x=-130;
 				hero.platform.y=0;
 				game.addChild(hero);
 				
-				var camera:Camera2DBehaviour=new Camera2DBehaviour(renderer,320,240,1,1);
+				
+				
+				camera=new Camera2DBehaviour(renderer,320,240,1,1);
 				//camera.sprite.scaleX=camera.sprite.scaleY=4;
 				hero.addBehaviour(camera);
 				camera.sprite.scaleX=camera.sprite.scaleY=2;
@@ -80,14 +91,15 @@ package
 				 var cameraHolder:ShotemUpEntity=new ShotemUpEntity();
 				 cameraHolder.addBehaviour(camera);
 				game.addChild(cameraHolder);
-				var camera2:Camera2DBehaviour=new Camera2DBehaviour(renderer,320,240,1,1);
-				//camera.sprite.scaleX=camera.sprite.scaleY=4;
-				//hero.addBehaviour(camera);
-				camera.sprite.scaleX=camera.sprite.scaleY=2;
-				camera.sprite.x=0;
-				camera.sprite.y=0;
-				addChild(camera.sprite);
+				//var camera2:Camera2DBehaviour=new Camera2DBehaviour(renderer,320,240,1,1);
 				
+//				//camera.sprite.scaleX=camera.sprite.scaleY=4;
+//				//hero.addBehaviour(camera);
+//				camera.sprite.scaleX=camera.sprite.scaleY=2;
+//				camera.sprite.x=0;
+//				camera.sprite.y=0;
+//				addChild(camera.sprite);
+//				
 				
 				camera.addParallaxBackground(createSpaceParallax(6));
 				camera.addParallaxBackground(createRandomParallax(4));
@@ -96,17 +108,14 @@ package
 				
 				camera.addParallaxBackground(createRandomParallax(1));
 				
+				
 		
 				
+				//game.addChild(game);
 				
 				SoundEngine.singleton.playActionMusic();
 				
-				addEventListener(Event.ENTER_FRAME,function():void{
-					camera.lockBitmap();
-					//MovingPlatform(camera.entity).platform.x+=3;
-					game.update();		
-					camera.unlockBitmap();
-				});
+				addEventListener(Event.ENTER_FRAME,update);
 				
 				
 				
@@ -116,6 +125,17 @@ package
 				
 			});		
 		}
+		
+		private function update(e:Event):void{
+			camera.lockBitmap();
+			//MovingPlatform(camera.entity).platform.x+=3;
+			game.update();		
+			camera.unlockBitmap();
+			if(alpha<1.0){
+				alpha+=0.05	;
+			}
+		}
+		
 		[Embed(source="space.png")]
 		private var Space:Class;
 		
